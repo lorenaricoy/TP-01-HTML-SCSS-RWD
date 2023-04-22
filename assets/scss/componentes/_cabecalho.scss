@@ -1,0 +1,61 @@
+@use '../abstract/variaveis' as var;
+.container1{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    width: 5vw;
+    .navegacao{
+        transform: rotate(90deg);
+        .navegacao--lista{
+            display: flex;
+            .lista--item{
+                margin: 12px;
+                .item--link{
+                text-decoration: none;
+                color: var.$cor-fonte-primaria;
+                font-size: 36px;
+                &:hover{
+                    color: var.$cor-destaque;
+                }
+                }
+            }
+        }
+    }
+}
+
+/*@media screen and (max-width: 880px){
+    .container1{
+        max-width: 8vw;
+    }
+}*/
+
+@media screen and (max-width: 900px){
+    .container1{
+        width: 10vw;
+        .navegacao{
+            .navegacao--lista{
+                .lista--item{
+                    .item--link{
+                    font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .container1{
+        width: 8vw;
+        .navegacao{
+            .navegacao--lista{
+                .lista--item{
+                    margin: 5px;
+                    .item--link{
+                        font-size:13px
+                    }
+                }
+            }
+        }
+    }
+}
