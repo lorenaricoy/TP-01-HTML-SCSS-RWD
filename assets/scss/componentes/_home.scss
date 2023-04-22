@@ -1,0 +1,118 @@
+@use '../abstract/variaveis' as var;
+
+@mixin estilizaTexto($cor) {
+    font-size: var.$tamanho-texto;
+    font-weight: var.$peso-fonte;
+    line-height: var.$tamanho-linha;
+    color: $cor;
+}
+
+@mixin estilizaTitulo($cor) {
+    font-size: var.$tamanho-titulo;
+    font-weight: var.$peso-fonte;
+    line-height: var.$tamanho-linha-titulo;
+    color: $cor;
+}
+
+@mixin estilizaSubTitulo($cor) {
+    font-size: var.$tamanho-subtitulo;
+    font-weight: var.$peso-fonte;
+    line-height: var.$tamanho-linha-subtitulo;
+    color: $cor;
+}
+
+#Home {
+    display: flex;
+}
+
+.initial_sect {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    .initial_sect--text {
+        width: 40%;
+        display: inline-block;
+        
+        position: absolute;
+        left: 20%;
+        top: 20%;
+
+        // Para ficar na frente da imagem
+        z-index: 1;
+
+        h1 {
+            @include estilizaTitulo(var.$cor-fonte-primaria);
+            margin-left: 7%;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 10%;
+            
+            @include estilizaTexto(var.$cor-fonte-primaria);
+        }
+    }
+
+    .initial_sect--img {
+        border-radius: 100%;
+        width: 45%;
+        max-width: 800px;
+        background: radial-gradient(#845AE7E0 25%, #845AE79E 40%, var.$cor-de-fundo 71%);
+
+        position: absolute;
+        left: 50%;
+        top: 10%;
+    }
+}
+
+.content-sect {
+    width: 90vw;
+    margin-top: 50px;
+    
+    .content {
+        display: inline-block;
+        width: 50%;
+        padding: 5%;
+        background-color: var.$cor-fonte-primaria;
+        border-radius: 30px;
+        
+        &--title {
+            @include estilizaSubTitulo(var.$cor-fonte-secundaria);
+        }
+
+        &--text {
+            margin-top: 50px;
+            @include estilizaTexto(var.$cor-fonte-secundaria);
+        }
+    }
+
+    .side_bar {
+        display: inline-block;
+        vertical-align: top;
+        width: 35%;
+        margin-top: 5%;
+        margin-left: 4%;
+
+        .side_bar--title {
+            @include estilizaSubTitulo(var.$cor-fonte-primaria)
+        }
+
+        .lista {
+            list-style-type: disc;
+            margin-top: 50px;
+            padding-left: 20%;
+
+            // Estiliza bolinhas
+            color: var.$cor-destaque;
+            font-size: var.$tamanho-texto;
+
+            .lista--item {
+                line-height: 60px;
+                a {
+                    @include estilizaTexto(var.$cor-fonte-primaria);
+                }
+            }
+        }
+    }
+}
