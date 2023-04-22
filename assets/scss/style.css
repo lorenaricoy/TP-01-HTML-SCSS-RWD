@@ -4,5 +4,39 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: #1C1C1C;
+}
+
+.initial_sect {
+  width: 100vw;
+  height: 70vh;
   color: #FFFFFF;
+  position: relative;
+}
+.initial_sect .initial_sect--text {
+  width: 40%;
+  display: inline-block;
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  z-index: 1;
+  font-weight: 600;
+}
+.initial_sect .initial_sect--text h1 {
+  font-size: 96px;
+  margin-left: 7%;
+}
+.initial_sect .initial_sect--text p {
+  text-align: center;
+  margin-top: 10%;
+  line-height: 45px;
+  font-size: 36px;
+}
+.initial_sect .initial_sect--img {
+  border-radius: 100%;
+  width: 45%;
+  max-width: 800px;
+  background: radial-gradient(rgba(132, 90, 231, 0.8784313725) 25%, rgba(132, 90, 231, 0.6196078431) 40%, #1C1C1C 71%);
+  position: absolute;
+  left: 55%;
+  top: 20%;
 }/*# sourceMappingURL=style.css.map */
