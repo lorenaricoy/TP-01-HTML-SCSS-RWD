@@ -62,20 +62,24 @@ html, body {
   width: 40%;
   display: inline-block;
   position: absolute;
-  left: 25%;
-  top: 30%;
+  left: 20%;
+  top: 20%;
   z-index: 1;
-  font-weight: 600;
 }
 .initial_sect .initial_sect--text h1 {
   font-size: 96px;
+  font-weight: 600;
+  line-height: 120px;
+  color: #FFFFFF;
   margin-left: 7%;
 }
 .initial_sect .initial_sect--text p {
   text-align: center;
   margin-top: 10%;
-  line-height: 45px;
   font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  color: #FFFFFF;
 }
 .initial_sect .initial_sect--img {
   border-radius: 100%;

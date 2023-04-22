@@ -9,31 +9,47 @@
         <title>Início</title>
     </head>
     <body>
-        <header class="cabecalho container1" >
-            <img src="../assets/imagens/logo.png" alt="logo do site" class="logo">
-            <nav class="navegacao">
-                <ul class="navegacao--lista">
-                    <li class="lista--item"><a class="item--link" href="../index.html">Home</a></li>
-                    <li class="lista--item"><a class="item--link"href="galeriaDeImagens.html">Galeria</a></li>
-                    <li class="lista--item"><a class="item--link"href="galeriaDeImagens.html">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="container2">
-            <main>
+        <div id="Home">
+            <header class="cabecalho container1" >
+                <img src="./assets/imagens/logo.png" alt="logo do site" class="logo">
+                <nav class="navegacao">
+                    <ul class="navegacao--lista">
+                        <li class="lista--item"><a class="item--link" href="./index.html">Home</a></li>
+                        <li class="lista--item"><a class="item--link"href="./pages/galeriaDeImagens.html">Galeria</a></li>
+                        <li class="lista--item"><a class="item--link"href="./pages/paginaContato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+    
+            <main id="main_content">
+                <section class="initial_sect">
+                    <div class="initial_sect--text">
+                        <h1>O que é</h1>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                    <img src="./assets/images/mussolini.png" alt="Imagem de Benito Mussolini" class="initial_sect--img">
+                </section>
+    
+                <section class="content-sect">
+                    <div class="content">
+                        <h2 class="content--title">Como surgiu</h2>
+                        <p class="content--text">Assim como o leitor é fundamental para a existência do texto, a figura do autor também é indispensável. Para produzir um texto, um sujeito articula sua língua — procura escolher as melhores palavras e ordens sintáticas possíveis —, relaciona-se com outras pessoas e diz algo que, para ele, é importante ou necessário.
+                            Esse complexo processo de produção de texto é inerente ao ser humano desde sua origem.</p>
+                    </div>
+    
+                    <aside class="side_bar">
+                        <h2 class="side_bar--title">Entenda mais</h2>
+                        
+                        <ul class="lista">
+                            <li class="lista--item"><a href="#">Mussolini</a></li>
+                            <li class="lista--item"><a href="#">Caracteristicas</a></li>
+                            <li class="lista--item"><a href="#">Marcha sobre roma</a></li>
+                            <li class="lista--item"><a href="#">Ano de 1943</a></li>
+                            <li class="lista--item"><a href="#">Ano de 1943</a></li>
+                        </ul>
+                    </aside>
+                </section>
             </main>
-            <footer>
-            </footer>
         </div>
-
-        <main id="main_content">
-            <section class="initial_sect">
-                <div class="initial_sect--text">
-                    <h1>O que é</h1>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                </div>
-                <img src="./assets/images/mussolini.png" alt="Imagem de Benito Mussolini" class="initial_sect--img">
-            </section>
-        </main>
     </body>
 </html>
