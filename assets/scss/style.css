@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 html, body {
   font-family: "Quicksand", sans-serif;
@@ -52,10 +53,14 @@ html, body {
     font-size: 13px;
   }
 }
+#Home {
+  display: flex;
+}
+
+/* --- Seção do inicio da pagina --- */
 .initial_sect {
   width: 100vw;
-  height: 70vh;
-  color: #FFFFFF;
+  height: 90vh;
   position: relative;
 }
 .initial_sect .initial_sect--text {
@@ -75,7 +80,7 @@ html, body {
 }
 .initial_sect .initial_sect--text p {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 15%;
   font-size: 36px;
   font-weight: 600;
   line-height: 45px;
@@ -87,8 +92,77 @@ html, body {
   max-width: 800px;
   background: radial-gradient(rgba(132, 90, 231, 0.8784313725) 25%, rgba(132, 90, 231, 0.6196078431) 40%, #1C1C1C 71%);
   position: absolute;
-  left: 55%;
-  top: 20%;
+  left: 50%;
+  top: 10%;
+}
+
+/* --- Seção de conteudo --- */
+.content_sect {
+  width: 90vw;
+  margin-top: 50px;
+}
+.content_sect .content {
+  display: inline-block;
+  width: 50%;
+  padding: 5%;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+}
+.content_sect .content--title {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 80px;
+  color: #1E1E1E;
+}
+.content_sect .content--text {
+  margin-top: 50px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  color: #1E1E1E;
+}
+.content_sect .side_bar {
+  display: inline-block;
+  vertical-align: top;
+  width: 35%;
+  margin-top: 5%;
+  margin-left: 4%;
+}
+.content_sect .side_bar .side_bar--title {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 80px;
+  color: #FFFFFF;
+}
+.content_sect .side_bar .lista {
+  list-style-type: disc;
+  margin-top: 50px;
+  padding-left: 20%;
+  color: rgba(132, 90, 231, 0.5490196078);
+  font-size: 36px;
+}
+.content_sect .side_bar .lista .lista--item {
+  line-height: 60px;
+}
+.content_sect .side_bar .lista .lista--item a {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  color: #FFFFFF;
+}
+
+/* --- Segunda seção de conteudo --- */
+.content_sect .content2--title {
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 120px;
+  color: #FFFFFF;
+}
+.content_sect .content2 div .content2--text {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+  color: #FFFFFF;
 }
 
 .rodape {

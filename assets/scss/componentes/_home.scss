@@ -21,13 +21,15 @@
     color: $cor;
 }
 
+// Home geral
 #Home {
     display: flex;
 }
 
+/* --- Seção do inicio da pagina --- */
 .initial_sect {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     position: relative;
 
     .initial_sect--text {
@@ -48,7 +50,7 @@
 
         p {
             text-align: center;
-            margin-top: 10%;
+            margin-top: 15%;
             
             @include estilizaTexto(var.$cor-fonte-primaria);
         }
@@ -66,7 +68,8 @@
     }
 }
 
-.content-sect {
+/* --- Seção de conteudo --- */
+.content_sect {
     width: 90vw;
     margin-top: 50px;
     
@@ -112,6 +115,21 @@
                 a {
                     @include estilizaTexto(var.$cor-fonte-primaria);
                 }
+            }
+        }
+    }
+}
+
+/* --- Segunda seção de conteudo --- */
+.content_sect {
+    .content2 {
+        &--title {
+            @include estilizaTitulo(var.$cor-fonte-primaria);
+        }
+
+        div {
+            .content2--text {
+                @include estilizaTexto(var.$cor-fonte-primaria);
             }
         }
     }
