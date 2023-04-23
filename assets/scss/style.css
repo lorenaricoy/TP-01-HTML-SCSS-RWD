@@ -287,7 +287,7 @@ html, body {
 }
 .container .container2 {
   width: 100%;
-  margin-top: 6em;
+  margin-top: 4em;
 }
 .container .container2 main {
   display: flex;
@@ -356,5 +356,76 @@ html, body {
   }
   .container .container2 main .container-imagem .descricao--titulo {
     font-size: 24px;
+  }
+}
+.container {
+  display: flex;
+}
+.container .container2 {
+  width: 80%;
+  margin: 4em auto;
+}
+.container .container2 main {
+  gap: 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*@media screen and (max-width: 900px){
+    .container{
+        .container2{
+            main{
+                .container-imagem{
+                    .container-imagem--descricao{
+                        .descricao--texto{
+                            font-size: 12px;
+                        }
+                        .descricao--titulo{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}*/
+@media screen and (max-width: 480px) {
+  .container .container2 {
+    margin: 1em auto 2em 3em;
+  }
+  .container .container2 main {
+    flex-direction: column;
+  }
+}
+.container .container2 main .card-informacoes {
+  margin-bottom: 2em;
+  width: 25%;
+}
+.container .container2 main .card-informacoes .card-informações--imagem {
+  width: 90%;
+  border-radius: 100%;
+}
+.container .container2 main .card-informacoes .card-informacoes--lista .lista--item {
+  color: #FFFFFF;
+  margin: 0.5em 0;
+  display: flex;
+  align-items: center;
+}
+.container .container2 main .card-informacoes .card-informacoes--lista .lista--item .item--imagem {
+  width: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .container .container2 main .card-informacoes {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container .container2 main .card-informacoes {
+    width: 90%;
+  }
+  .container .container2 main .card-informacoes .card-informações--imagem {
+    width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */

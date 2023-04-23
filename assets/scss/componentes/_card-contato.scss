@@ -1,0 +1,53 @@
+@use '../abstract/variaveis' as var;
+.container{
+    .container2{
+        main{
+            .card-informacoes{
+                margin-bottom: 2em;
+                width: 25%;
+                .card-informações--imagem{
+                    width: 90%;
+                    border-radius: 100%;
+                }
+                .card-informacoes--lista{
+                    .lista--item{
+                        color: var.$cor-fonte-primaria;
+                        margin: 0.5em 0;
+                        display: flex;
+                        align-items: center;
+                        .item--imagem{
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .container{
+        .container2{
+            main{
+                .card-informacoes{
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        .container2{
+            main{
+                .card-informacoes{
+                    width: 90%;
+                    .card-informações--imagem{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
