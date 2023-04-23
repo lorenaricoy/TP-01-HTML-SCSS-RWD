@@ -13,6 +13,10 @@
                 position: relative;
                 width: 45%;
                 margin-bottom:2em;
+                transition: width 2s;
+                &:hover{
+                    width: 50%;
+                }
                 .container-imagem--imagem{
                     width: 100%;
                 }

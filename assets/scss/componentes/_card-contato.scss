@@ -5,6 +5,11 @@
             .card-informacoes{
                 margin-bottom: 2em;
                 width: 25%;
+                transition: width 2s;
+                &:hover{
+                    width: 29%;
+                }
+                
                 .card-informações--imagem{
                     width: 90%;
                     border-radius: 100%;

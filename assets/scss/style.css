@@ -24,6 +24,7 @@ html, body {
   text-decoration: none;
   color: #FFFFFF;
   font-size: 36px;
+  text-transform: uppercase;
 }
 .container1 .navegacao .navegacao--lista .lista--item .item--link:hover {
   color: rgba(132, 90, 231, 0.5490196078);
@@ -299,6 +300,10 @@ html, body {
   position: relative;
   width: 45%;
   margin-bottom: 2em;
+  transition: width 2s;
+}
+.container .container2 main .container-imagem:hover {
+  width: 50%;
 }
 .container .container2 main .container-imagem .container-imagem--imagem {
   width: 100%;
@@ -401,6 +406,10 @@ html, body {
 .container .container2 main .card-informacoes {
   margin-bottom: 2em;
   width: 25%;
+  transition: width 2s;
+}
+.container .container2 main .card-informacoes:hover {
+  width: 29%;
 }
 .container .container2 main .card-informacoes .card-informações--imagem {
   width: 90%;
