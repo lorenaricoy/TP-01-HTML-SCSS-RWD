@@ -168,7 +168,6 @@ html, body {
 .rodape {
   background-color: #363636;
   display: flex;
-  width: 100%;
   justify-content: space-around;
   padding: 3em 1em;
 }
@@ -179,7 +178,7 @@ html, body {
   color: #FFFFFF;
 }
 .rodape .card-sobre-nos {
-  width: 25%;
+  width: 29%;
 }
 .rodape .card-sobre-nos .paragrafo--sobre-nos {
   font-weight: 700;
@@ -281,5 +280,81 @@ html, body {
     font-weight: 500;
     font-size: 10px;
     line-height: 12.5px;
+  }
+}
+.container {
+  display: flex;
+}
+.container .container2 {
+  width: 100%;
+  margin-top: 6em;
+}
+.container .container2 main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-right: 2%;
+}
+.container .container2 main .container-imagem {
+  position: relative;
+  width: 45%;
+  margin-bottom: 2em;
+}
+.container .container2 main .container-imagem .container-imagem--imagem {
+  width: 100%;
+}
+.container .container2 main .container-imagem .container-imagem--descricao {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(132, 90, 231, 0.2745098039);
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.container .container2 main .container-imagem .container-imagem--descricao .descricao--texto {
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+  width: 60%;
+  margin: 0 auto;
+}
+.container .container2 main .container-imagem .container-imagem--descricao .descricao--titulo {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 900px) {
+  .container .container2 main .container-imagem .container-imagem--descricao .descricao--texto {
+    font-size: 12px;
+  }
+  .container .container2 main .container-imagem .container-imagem--descricao .descricao--titulo {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    justify-content: center;
+  }
+  .container .container2 {
+    margin-top: 2em;
+  }
+  .container .container2 main {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  .container .container2 main .container-imagem {
+    margin-bottom: 1em;
+    width: 90%;
+    margin-left: 3%;
+  }
+  .container .container2 main .container-imagem .descricao--texto {
+    font-size: 16px;
+  }
+  .container .container2 main .container-imagem .descricao--titulo {
+    font-size: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
