@@ -6,6 +6,8 @@
                 margin-bottom: 2em;
                 width: 25%;
                 transition: width 2s;
+                animation-duration: 3s;
+                animation-name: slidein;
                 &:hover{
                     width: 29%;
                 }
@@ -24,6 +26,14 @@
                             width: 30px;
                         }
                     }
+                }
+            }
+            @keyframes slidein {
+                0% {
+                    transform: translatey(-150%);
+                }
+                100% {
+                    transform: translatey(0);
                 }
             }
         }

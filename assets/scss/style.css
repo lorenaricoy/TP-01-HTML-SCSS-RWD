@@ -301,6 +301,8 @@ html, body {
   width: 45%;
   margin-bottom: 2em;
   transition: width 2s;
+  animation-duration: 3s;
+  animation-name: fadein;
 }
 .container .container2 main .container-imagem:hover {
   width: 50%;
@@ -330,6 +332,14 @@ html, body {
   font-weight: 500;
   font-size: 32px;
   color: #FFFFFF;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -407,6 +417,8 @@ html, body {
   margin-bottom: 2em;
   width: 25%;
   transition: width 2s;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 .container .container2 main .card-informacoes:hover {
   width: 29%;
@@ -423,6 +435,14 @@ html, body {
 }
 .container .container2 main .card-informacoes .card-informacoes--lista .lista--item .item--imagem {
   width: 30px;
+}
+@keyframes slidein {
+  0% {
+    transform: translatey(-150%);
+  }
+  100% {
+    transform: translatey(0);
+  }
 }
 
 @media screen and (max-width: 900px) {
