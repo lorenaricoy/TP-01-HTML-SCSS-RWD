@@ -2,7 +2,7 @@
 @mixin estilizaTitulosCards() {
     font-weight: 700;
     font-size: 40px;
-    margin-bottom: 1em;;
+    margin-bottom: 1em;
     color: var.$cor-fonte-primaria;
 }
 .rodape{
@@ -10,7 +10,7 @@
     #363636;
     display: flex;
     justify-content: space-around;
-    padding: 3em 1em;
+    padding: 2em 1em;
     .card-sobre-nos{
         .card-sobre-nos--titulo{
             @include estilizaTitulosCards();
