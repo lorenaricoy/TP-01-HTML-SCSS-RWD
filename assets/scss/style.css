@@ -172,14 +172,14 @@ html, body {
   justify-content: space-around;
   padding: 3em 1em;
 }
-.rodape .cards .cards--titulo {
+.rodape .card-sobre-nos {
+  width: 29%;
+}
+.rodape .card-sobre-nos .card-sobre-nos--titulo {
   font-weight: 700;
   font-size: 40px;
   margin-bottom: 1em;
   color: #FFFFFF;
-}
-.rodape .card-sobre-nos {
-  width: 29%;
 }
 .rodape .card-sobre-nos .paragrafo--sobre-nos {
   font-weight: 700;
@@ -192,6 +192,12 @@ html, body {
 .rodape .card-liks-referencia {
   width: 29%;
 }
+.rodape .card-liks-referencia .card-liks-referencia--titulo {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 1em;
+  color: #FFFFFF;
+}
 .rodape .card-liks-referencia .lista--links-referencia .lista--item {
   margin: 0.2em;
 }
@@ -203,6 +209,12 @@ html, body {
 .rodape .card-contato {
   width: 29%;
   position: relative;
+}
+.rodape .card-contato .card-contato--titulo {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 1em;
+  color: #FFFFFF;
 }
 .rodape .card-contato .input {
   background-color: rgba(217, 199, 199, 0.1490196078);

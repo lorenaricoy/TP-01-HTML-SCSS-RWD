@@ -1,19 +1,20 @@
 @use '../abstract/variaveis' as var;
+@mixin estilizaTitulosCards() {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 1em;;
+    color: var.$cor-fonte-primaria;
+}
 .rodape{
     background-color: 
     #363636;
     display: flex;
     justify-content: space-around;
     padding: 3em 1em;
-    .cards{
-        .cards--titulo{
-            font-weight: 700;
-            font-size: 40px;
-            margin-bottom: 1em;;
-            color: var.$cor-fonte-primaria;
-        }
-    }
     .card-sobre-nos{
+        .card-sobre-nos--titulo{
+            @include estilizaTitulosCards();
+        }
         width: 29%;
         .paragrafo--sobre-nos{
             font-weight: 700;
@@ -26,6 +27,9 @@
     }
     .card-liks-referencia{
         width: 29%;
+        .card-liks-referencia--titulo{
+            @include estilizaTitulosCards();
+        }
         .lista--links-referencia{
             .lista--item{
                 margin: 0.2em;
@@ -40,6 +44,9 @@
     .card-contato{
         width: 29%;
         position: relative;
+        .card-contato--titulo{
+            @include estilizaTitulosCards();
+        }
         .input{
             background-color: #D9C7C726;
             border: 0;
