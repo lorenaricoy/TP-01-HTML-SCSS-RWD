@@ -73,18 +73,18 @@ html, body {
   z-index: 1;
 }
 .initial_sect .initial_sect--text h1 {
-  font-size: 96px;
+  font-size: clamp(1.7rem, 3rem, 96px);
   font-weight: 600;
-  line-height: 120px;
+  line-height: clamp(2.2rem, 3.5rem, 120px);
   color: #FFFFFF;
   margin-left: 7%;
 }
 .initial_sect .initial_sect--text p {
   text-align: center;
   margin-top: 15%;
-  font-size: 36px;
+  font-size: clamp(1.3rem, 1.7rem, 36px);
   font-weight: 600;
-  line-height: 45px;
+  line-height: clamp(1.7rem, 2.2rem, 45px);
   color: #FFFFFF;
 }
 .initial_sect .initial_sect--img {
@@ -110,16 +110,16 @@ html, body {
   border-radius: 30px;
 }
 .content_sect .content--title {
-  font-size: 64px;
+  font-size: clamp(1.5rem, 2.7rem, 64px);
   font-weight: 600;
-  line-height: 80px;
+  line-height: clamp(2rem, 3rem, 80px);
   color: #1E1E1E;
 }
 .content_sect .content--text {
   margin-top: 50px;
-  font-size: 36px;
+  font-size: clamp(1.3rem, 1.7rem, 36px);
   font-weight: 600;
-  line-height: 45px;
+  line-height: clamp(1.7rem, 2.2rem, 45px);
   color: #1E1E1E;
 }
 .content_sect .side_bar {
@@ -130,9 +130,9 @@ html, body {
   margin-left: 4%;
 }
 .content_sect .side_bar .side_bar--title {
-  font-size: 64px;
+  font-size: clamp(1.5rem, 2.7rem, 64px);
   font-weight: 600;
-  line-height: 80px;
+  line-height: clamp(2rem, 3rem, 80px);
   color: #FFFFFF;
 }
 .content_sect .side_bar .lista {
@@ -140,29 +140,29 @@ html, body {
   margin-top: 50px;
   padding-left: 20%;
   color: rgba(132, 90, 231, 0.5490196078);
-  font-size: 36px;
+  font-size: clamp(1.3rem, 1.7rem, 36px);
 }
 .content_sect .side_bar .lista .lista--item {
   line-height: 60px;
 }
 .content_sect .side_bar .lista .lista--item a {
-  font-size: 36px;
+  font-size: clamp(1.3rem, 1.7rem, 36px);
   font-weight: 600;
-  line-height: 45px;
+  line-height: clamp(1.7rem, 2.2rem, 45px);
   color: #FFFFFF;
 }
 
 /* --- Segunda seção de conteudo --- */
 .content_sect .content2--title {
-  font-size: 96px;
+  font-size: clamp(1.7rem, 3rem, 96px);
   font-weight: 600;
-  line-height: 120px;
+  line-height: clamp(2.2rem, 3.5rem, 120px);
   color: #FFFFFF;
 }
 .content_sect .content2 div .content2--text {
-  font-size: 36px;
+  font-size: clamp(1.3rem, 1.7rem, 36px);
   font-weight: 600;
-  line-height: 45px;
+  line-height: clamp(1.7rem, 2.2rem, 45px);
   color: #FFFFFF;
 }
 
