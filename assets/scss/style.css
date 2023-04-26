@@ -320,10 +320,14 @@ html, body {
   width: 50%;
 }
 .container .container2 main .container-imagem .container-imagem--imagem {
+  /*border-top-right-radius: 5px;
+  border-top-left-radius: 5px;*/
+  border-radius: 10px;
   width: 100%;
 }
 .container .container2 main .container-imagem .container-imagem--descricao {
   position: absolute;
+  border-radius: 10px;
   bottom: 0;
   background-color: rgba(132, 90, 231, 0.2745098039);
   height: 40%;
@@ -331,6 +335,7 @@ html, body {
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
+  width: 100%;
 }
 .container .container2 main .container-imagem .container-imagem--descricao .descricao--texto {
   font-weight: 400;
@@ -356,10 +361,10 @@ html, body {
 
 @media screen and (max-width: 900px) {
   .container .container2 main .container-imagem .container-imagem--descricao .descricao--texto {
-    font-size: 12px;
+    font-size: 16px;
   }
   .container .container2 main .container-imagem .container-imagem--descricao .descricao--titulo {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 480px) {

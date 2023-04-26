@@ -20,10 +20,15 @@
                     width: 50%;
                 }
                 .container-imagem--imagem{
+                    /*border-top-right-radius: 5px;
+                    border-top-left-radius: 5px;*/
+                    border-radius: 10px;
                     width: 100%;
+                    
                 }
                 .container-imagem--descricao{
                     position: absolute;
+                    border-radius: 10px;
                     bottom: 0;
                     background-color: var.$cor-destaque-background;
                     height: 40%;
@@ -31,6 +36,7 @@
                     flex-direction: column;
                     justify-content: space-around;
                     text-align: center;
+                    width: 100%;
                     .descricao--texto{
                         font-weight: 400;
                         font-size: 24px;
@@ -61,10 +67,10 @@
                 .container-imagem{
                     .container-imagem--descricao{
                         .descricao--texto{
-                            font-size: 12px;
+                            font-size: 16px;
                         }
                         .descricao--titulo{
-                            font-size: 20px;
+                            font-size: 16px;
                         }
                     }
                 }
