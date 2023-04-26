@@ -361,10 +361,10 @@ html, body {
 
 @media screen and (max-width: 900px) {
   .container .container2 main .container-imagem .container-imagem--descricao .descricao--texto {
-    font-size: 16px;
+    font-size: 13px;
   }
   .container .container2 main .container-imagem .container-imagem--descricao .descricao--titulo {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -379,15 +379,16 @@ html, body {
     gap: 1.5em;
   }
   .container .container2 main .container-imagem {
+    height: 45%;
     margin-bottom: 1em;
     width: 90%;
     margin-left: 3%;
   }
   .container .container2 main .container-imagem .descricao--texto {
-    font-size: 16px;
+    font-size: 12px;
   }
   .container .container2 main .container-imagem .descricao--titulo {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 .container {
