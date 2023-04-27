@@ -66,6 +66,7 @@ body {
 .initial_sect {
   width: 100%;
   position: relative;
+  margin-bottom: 10%;
 }
 .initial_sect .initial_sect--text {
   width: 40%;
@@ -188,6 +189,48 @@ body {
   width: 80%;
 }
 
+/* --- Seção de caracteristicas --- */
+.caracteristicas .caracteristicas--titulo {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 3.8rem;
+  color: #FFFFFF;
+  margin-bottom: 1em;
+}
+.caracteristicas .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: space-around;
+}
+.caracteristicas .cards .container-caracteristica {
+  width: 23%;
+  margin-bottom: 2em;
+  position: relative;
+}
+.caracteristicas .cards .container-caracteristica .container-caracteristica--imagem {
+  border-radius: 10px;
+  width: 100%;
+}
+.caracteristicas .cards .container-caracteristica .container-caracteristica--titulo {
+  position: absolute;
+  bottom: 0;
+  background-color: #845ae7;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.caracteristicas .cards .container-caracteristica .container-caracteristica--titulo .titulo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  color: #FFFFFF;
+}
+
 /* --- Seção final --- */
 .content_sect .content_container {
   border-radius: 30px;
@@ -211,45 +254,6 @@ body {
   font-weight: 600;
   line-height: 2rem;
   color: #1E1E1E;
-}
-
-.caracteristicas .caracteristicas--titulo {
-  font-size: 3.5rem;
-  font-weight: 600;
-  line-height: 3.8rem;
-  color: #FFFFFF;
-  margin-bottom: 1em;
-}
-.caracteristicas .cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2%;
-  justify-content: space-around;
-  padding-right: 3%;
-}
-.caracteristicas .cards .container-caracteristica {
-  width: 23%;
-  margin-bottom: 2em;
-  position: relative;
-}
-.caracteristicas .cards .container-caracteristica .container-caracteristica--imagem {
-  border-radius: 10px;
-  width: 100%;
-}
-.caracteristicas .cards .container-caracteristica .container-caracteristica--titulo {
-  position: absolute;
-  bottom: 0;
-  background-color: #FFFFFF;
-  width: 100%;
-  height: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.caracteristicas .cards .container-caracteristica .container-caracteristica--titulo .titulo {
-  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 1200px) {
