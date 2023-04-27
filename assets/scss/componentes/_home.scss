@@ -136,3 +136,28 @@
 }
 */
 
+/* --- Seção final --- */
+.content_sect {
+    .content_container {
+        border-radius: 30px;
+        background-color: var.$cor-fonte-primaria;
+        
+        .content_container--title {
+            h2 {
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+                background-color: #845AE78C;
+                padding: 2%;
+
+                @include estilizaTitulo(var.$cor-fonte-primaria);
+            }
+        }
+
+        .content_container--text {
+            padding: 5%;
+            p {
+                @include estilizaTexto(var.$cor-fonte-secundaria)
+            }
+        }
+    }
+}

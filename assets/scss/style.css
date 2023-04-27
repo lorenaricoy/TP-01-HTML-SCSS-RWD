@@ -172,6 +172,31 @@ body {
     }
 }
 */
+/* --- Seção final --- */
+.content_sect .content_container {
+  border-radius: 30px;
+  background-color: #FFFFFF;
+}
+.content_sect .content_container .content_container--title h2 {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: rgba(132, 90, 231, 0.5490196078);
+  padding: 2%;
+  font-size: clamp(1.5rem, 2.5rem, 96px);
+  font-weight: 600;
+  line-height: clamp(1.8rem, 2.8rem, 120px);
+  color: #FFFFFF;
+}
+.content_sect .content_container .content_container--text {
+  padding: 5%;
+}
+.content_sect .content_container .content_container--text p {
+  font-size: clamp(0.7rem, 1.5rem, 36px);
+  font-weight: 600;
+  line-height: clamp(1rem, 2rem, 45px);
+  color: #1E1E1E;
+}
+
 .rodape {
   background-color: #363636;
   display: flex;
