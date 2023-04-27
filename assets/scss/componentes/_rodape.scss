@@ -1,7 +1,7 @@
 @use '../abstract/variaveis' as var;
 @mixin estilizaTitulosCards() {
     font-weight: 700;
-    font-size: 40px;
+    font-size: var.$tamanho-titulo-rodape;
     margin-bottom: 1em;
     color: var.$cor-fonte-primaria;
 }
@@ -18,7 +18,7 @@
         width: 29%;
         .paragrafo--sobre-nos{
             font-weight: 700;
-            font-size: 20px;
+            font-size: var.$tamanho-texto-rodape;
             color: var.$cor-fonte-primaria;
         }
         #copyRight{
@@ -36,7 +36,7 @@
                 .lista--link{
                     text-decoration: none;
                     color: var.$cor-fonte-primaria;
-                    font-size: 20px;
+                    font-size: var.$tamanho-texto-rodape;
                 }
             }
         }
@@ -56,7 +56,7 @@
             &::placeholder{
                 color: var.$cor-fonte-primaria;
                 font-weight: 500;
-                font-size: 20px;
+                font-size: var.$tamanho-texto-rodape;
             }
             padding: 0.75em;
         }

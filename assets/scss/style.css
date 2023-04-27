@@ -395,7 +395,7 @@ body {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .container .container2 main .container-imagem .container-imagem--descricao .descricao--texto {
     font-size: 13px;
   }
@@ -403,7 +403,7 @@ body {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
   .container {
     justify-content: center;
   }
