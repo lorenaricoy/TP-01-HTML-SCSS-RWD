@@ -4,3 +4,7 @@ html, body {
     font-family: var.$fonte;
     background-color: var.$cor-de-fundo;
 }
+
+body {
+    overflow-x: hidden;
+}
