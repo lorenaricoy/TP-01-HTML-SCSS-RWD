@@ -72,18 +72,10 @@ body {
   display: inline-block;
   position: absolute;
   left: 20%;
-  top: 20%;
-}
-.initial_sect .initial_sect--text h1 {
-  font-size: 3.5rem;
-  font-weight: 600;
-  line-height: 3.8rem;
-  color: #FFFFFF;
-  margin-left: 7%;
+  top: 40%;
 }
 .initial_sect .initial_sect--text p {
   text-align: center;
-  margin-top: 15%;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 2rem;
@@ -117,7 +109,6 @@ body {
   color: #1E1E1E;
 }
 .content_sect .content--text {
-  margin-top: 50px;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 2rem;
@@ -138,8 +129,8 @@ body {
 }
 .content_sect .side_bar .lista {
   list-style-type: disc;
-  margin-top: 50px;
-  padding-left: 20%;
+  margin-top: 30px;
+  padding-left: 10%;
   color: rgba(132, 90, 231, 0.5490196078);
   font-size: 1.5rem;
 }
@@ -174,6 +165,29 @@ body {
     }
 }
 */
+.content_sect .neofascismo--title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 3.8rem;
+  color: #FFFFFF;
+  margin-bottom: 4%;
+}
+.content_sect .neofascismo .content_neofascismo {
+  display: flex;
+  align-items: flex-start;
+  gap: 3%;
+}
+.content_sect .neofascismo .content_neofascismo--img {
+  margin-top: 20px;
+}
+.content_sect .neofascismo .content_neofascismo--text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  color: #FFFFFF;
+  width: 80%;
+}
+
 /* --- Seção final --- */
 .content_sect .content_container {
   border-radius: 30px;

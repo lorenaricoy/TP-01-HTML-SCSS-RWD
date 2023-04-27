@@ -37,17 +37,10 @@
         
         position: absolute;
         left: 20%;
-        top: 20%;
-
-        h1 {
-            @include estilizaTitulo(var.$cor-fonte-primaria);
-            margin-left: 7%;
-        }
+        top: 40%;
 
         p {
             text-align: center;
-            margin-top: 15%;
-            
             @include estilizaTexto(var.$cor-fonte-primaria);
         }
     }
@@ -79,7 +72,6 @@
         }
 
         &--text {
-            margin-top: 50px;
             @include estilizaTexto(var.$cor-fonte-secundaria);
         }
     }
@@ -97,8 +89,8 @@
 
         .lista {
             list-style-type: disc;
-            margin-top: 50px;
-            padding-left: 20%;
+            margin-top: 30px;
+            padding-left: 10%;
 
             // Estiliza bolinhas
             color: var.$cor-destaque;
@@ -135,6 +127,30 @@
     }
 }
 */
+.content_sect {
+    .neofascismo {
+        &--title {
+            @include estilizaTitulo(var.$cor-fonte-primaria);
+            margin-bottom: 4%;
+        }
+
+        .content_neofascismo {
+            display: flex;
+            align-items: flex-start;
+            gap: 3%;
+
+            &--img {
+                margin-top: 20px;
+            }
+
+            &--text {
+                @include estilizaTexto(var.$cor-fonte-primaria);
+                width: 80%;
+            }
+        }
+        
+    }
+}
 
 /* --- Seção final --- */
 .content_sect {
