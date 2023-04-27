@@ -114,6 +114,12 @@
                 line-height: 60px;
                 a {
                     @include estilizaTexto(var.$cor-fonte-primaria);
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                        color: var.$cor-destaque;
+                    }
                 }
             }
         }

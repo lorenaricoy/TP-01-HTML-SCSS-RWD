@@ -154,6 +154,11 @@ body {
   font-weight: 600;
   line-height: clamp(1rem, 2rem, 45px);
   color: #FFFFFF;
+  text-decoration: none;
+}
+.content_sect .side_bar .lista .lista--item a:hover {
+  text-decoration: underline;
+  color: rgba(132, 90, 231, 0.5490196078);
 }
 
 /*
