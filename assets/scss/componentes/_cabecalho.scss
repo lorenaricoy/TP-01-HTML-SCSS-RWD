@@ -13,7 +13,7 @@
                 .item--link{
                 text-decoration: none;
                 color: var.$cor-fonte-primaria;
-                font-size: 36px;
+                font-size: var.$tamanho-texto;
                 text-transform: uppercase;
                 &:hover{
                     color: var.$cor-destaque;
