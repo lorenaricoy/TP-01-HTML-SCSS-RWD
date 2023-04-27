@@ -28,8 +28,7 @@
 
 /* --- Seção do inicio da pagina --- */
 .initial_sect {
-    width: 100vw;
-    height: 90vh;
+    width: 100%;
     position: relative;
 
     .initial_sect--text {
@@ -39,9 +38,6 @@
         position: absolute;
         left: 20%;
         top: 20%;
-
-        // Para ficar na frente da imagem
-        z-index: 1;
 
         h1 {
             @include estilizaTitulo(var.$cor-fonte-primaria);
@@ -58,20 +54,17 @@
 
     .initial_sect--img {
         border-radius: 100%;
-        width: 45%;
+        width: 40%;
         max-width: 800px;
         background: radial-gradient(#845AE7E0 25%, #845AE79E 40%, var.$cor-de-fundo 71%);
-
-        position: absolute;
-        left: 50%;
-        top: 10%;
+        margin-left: 50%;
+        margin-top: 5%;
     }
 }
 
 /* --- Seção de conteudo --- */
 .content_sect {
     width: 90vw;
-    margin-top: 50px;
     
     .content {
         display: inline-block;

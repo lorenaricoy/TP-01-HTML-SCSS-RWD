@@ -64,8 +64,7 @@ body {
 
 /* --- Seção do inicio da pagina --- */
 .initial_sect {
-  width: 100vw;
-  height: 90vh;
+  width: 100%;
   position: relative;
 }
 .initial_sect .initial_sect--text {
@@ -74,7 +73,6 @@ body {
   position: absolute;
   left: 20%;
   top: 20%;
-  z-index: 1;
 }
 .initial_sect .initial_sect--text h1 {
   font-size: clamp(1.5rem, 2.5rem, 96px);
@@ -93,18 +91,16 @@ body {
 }
 .initial_sect .initial_sect--img {
   border-radius: 100%;
-  width: 45%;
+  width: 40%;
   max-width: 800px;
   background: radial-gradient(rgba(132, 90, 231, 0.8784313725) 25%, rgba(132, 90, 231, 0.6196078431) 40%, #1C1C1C 71%);
-  position: absolute;
-  left: 50%;
-  top: 10%;
+  margin-left: 50%;
+  margin-top: 5%;
 }
 
 /* --- Seção de conteudo --- */
 .content_sect {
   width: 90vw;
-  margin-top: 50px;
 }
 .content_sect .content {
   display: inline-block;
