@@ -47,7 +47,7 @@
                     .descricao--titulo{
                         text-transform: uppercase;
                         font-weight: 500;
-                        font-size: 32px;
+                        font-size: var.$tamanho-texto;
                         color: var.$cor-fonte-primaria;
                     }
                 }
