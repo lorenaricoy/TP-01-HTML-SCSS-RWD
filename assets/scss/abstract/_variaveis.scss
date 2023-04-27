@@ -4,14 +4,14 @@
 $fonte:'Quicksand', sans-serif;
 $peso-fonte: 600;
 // Texto
-$tamanho-texto: clamp(0.7rem,1.5rem,36px);
-$tamanho-linha: clamp(1rem,2rem,45px);
+$tamanho-texto: 1.5rem;
+$tamanho-linha: 2rem;
 // Titulo
-$tamanho-titulo: clamp(1.5rem,2.5rem,96px);
-$tamanho-linha-titulo: clamp(1.8rem,2.8rem,120px);
+$tamanho-titulo: 3.5rem;
+$tamanho-linha-titulo: 3.8rem;
 // Subtitulo
-$tamanho-subtitulo: clamp(1.2rem,2.2rem,64px);
-$tamanho-linha-subtitulo: clamp(1.6rem,2.5rem,80px);
+$tamanho-subtitulo: 2.2rem;
+$tamanho-linha-subtitulo: 2.5rem;
 
 // Cores
 $cor-de-fundo: #1C1C1C;
