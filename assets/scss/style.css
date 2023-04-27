@@ -199,6 +199,66 @@ body {
   color: #1E1E1E;
 }
 
+.caracteristicas .caracteristicas--titulo {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 3.8rem;
+  color: #FFFFFF;
+  margin-bottom: 1em;
+}
+.caracteristicas .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: space-around;
+  padding-right: 3%;
+}
+.caracteristicas .cards .container-caracteristica {
+  width: 23%;
+  margin-bottom: 2em;
+  position: relative;
+}
+.caracteristicas .cards .container-caracteristica .container-caracteristica--imagem {
+  border-radius: 10px;
+  width: 100%;
+}
+.caracteristicas .cards .container-caracteristica .container-caracteristica--titulo {
+  position: absolute;
+  bottom: 0;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.caracteristicas .cards .container-caracteristica .container-caracteristica--titulo .titulo {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .caracteristicas .cards .container-caracteristica {
+    width: 45%;
+  }
+  .caracteristicas .cards .container-caracteristica .container-caracteristica--imagem {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .caracteristicas .cards {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+  }
+  .caracteristicas .cards .container-caracteristica {
+    width: 90%;
+  }
+  .caracteristicas .cards .container-caracteristica .container-caracteristica--imagem {
+    width: 100%;
+  }
+}
 .rodape {
   background-color: #363636;
   display: flex;
@@ -362,7 +422,7 @@ body {
   position: absolute;
   border-radius: 10px;
   bottom: 0;
-  background-color: rgba(132, 90, 231, 0.2745098039);
+  background-color: rgba(132, 90, 231, 0.5607843137);
   height: 40%;
   display: flex;
   flex-direction: column;
