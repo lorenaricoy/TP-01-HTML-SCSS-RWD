@@ -27,7 +27,7 @@ body {
 .container1 .navegacao .navegacao--lista .lista--item .item--link {
   text-decoration: none;
   color: #FFFFFF;
-  font-size: clamp(0.7rem, 1.5rem, 36px);
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 .container1 .navegacao .navegacao--lista .lista--item .item--link:hover {
@@ -64,8 +64,7 @@ body {
 
 /* --- Seção do inicio da pagina --- */
 .initial_sect {
-  width: 100vw;
-  height: 90vh;
+  width: 100%;
   position: relative;
 }
 .initial_sect .initial_sect--text {
@@ -74,37 +73,35 @@ body {
   position: absolute;
   left: 20%;
   top: 20%;
-  z-index: 1;
 }
 .initial_sect .initial_sect--text h1 {
-  font-size: clamp(1.5rem, 2.5rem, 96px);
+  font-size: 3.5rem;
   font-weight: 600;
-  line-height: clamp(1.8rem, 2.8rem, 120px);
+  line-height: 3.8rem;
   color: #FFFFFF;
   margin-left: 7%;
 }
 .initial_sect .initial_sect--text p {
   text-align: center;
   margin-top: 15%;
-  font-size: clamp(0.7rem, 1.5rem, 36px);
+  font-size: 1.5rem;
   font-weight: 600;
-  line-height: clamp(1rem, 2rem, 45px);
+  line-height: 2rem;
   color: #FFFFFF;
 }
 .initial_sect .initial_sect--img {
   border-radius: 100%;
-  width: 45%;
+  width: 40%;
   max-width: 800px;
   background: radial-gradient(rgba(132, 90, 231, 0.8784313725) 25%, rgba(132, 90, 231, 0.6196078431) 40%, #1C1C1C 71%);
-  position: absolute;
-  left: 50%;
-  top: 10%;
+  margin-left: 50%;
+  margin-top: 5%;
 }
 
 /* --- Seção de conteudo --- */
 .content_sect {
   width: 90vw;
-  margin-top: 50px;
+  margin-bottom: 10%;
 }
 .content_sect .content {
   display: inline-block;
@@ -114,16 +111,16 @@ body {
   border-radius: 30px;
 }
 .content_sect .content--title {
-  font-size: clamp(1.2rem, 2.2rem, 64px);
+  font-size: 2.2rem;
   font-weight: 600;
-  line-height: clamp(1.6rem, 2.5rem, 80px);
+  line-height: 2.5rem;
   color: #1E1E1E;
 }
 .content_sect .content--text {
   margin-top: 50px;
-  font-size: clamp(0.7rem, 1.5rem, 36px);
+  font-size: 1.5rem;
   font-weight: 600;
-  line-height: clamp(1rem, 2rem, 45px);
+  line-height: 2rem;
   color: #1E1E1E;
 }
 .content_sect .side_bar {
@@ -134,9 +131,9 @@ body {
   margin-left: 4%;
 }
 .content_sect .side_bar .side_bar--title {
-  font-size: clamp(1.2rem, 2.2rem, 64px);
+  font-size: 2.2rem;
   font-weight: 600;
-  line-height: clamp(1.6rem, 2.5rem, 80px);
+  line-height: 2.5rem;
   color: #FFFFFF;
 }
 .content_sect .side_bar .lista {
@@ -144,15 +141,15 @@ body {
   margin-top: 50px;
   padding-left: 20%;
   color: rgba(132, 90, 231, 0.5490196078);
-  font-size: clamp(0.7rem, 1.5rem, 36px);
+  font-size: 1.5rem;
 }
 .content_sect .side_bar .lista .lista--item {
   line-height: 60px;
 }
 .content_sect .side_bar .lista .lista--item a {
-  font-size: clamp(0.7rem, 1.5rem, 36px);
+  font-size: 1.5rem;
   font-weight: 600;
-  line-height: clamp(1rem, 2rem, 45px);
+  line-height: 2rem;
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -187,18 +184,18 @@ body {
   border-top-right-radius: 30px;
   background-color: rgba(132, 90, 231, 0.5490196078);
   padding: 2%;
-  font-size: clamp(1.5rem, 2.5rem, 96px);
+  font-size: 3.5rem;
   font-weight: 600;
-  line-height: clamp(1.8rem, 2.8rem, 120px);
+  line-height: 3.8rem;
   color: #FFFFFF;
 }
 .content_sect .content_container .content_container--text {
   padding: 5%;
 }
 .content_sect .content_container .content_container--text p {
-  font-size: clamp(0.7rem, 1.5rem, 36px);
+  font-size: 1.5rem;
   font-weight: 600;
-  line-height: clamp(1rem, 2rem, 45px);
+  line-height: 2rem;
   color: #1E1E1E;
 }
 
@@ -383,7 +380,7 @@ body {
 .container .container2 main .container-imagem .container-imagem--descricao .descricao--titulo {
   text-transform: uppercase;
   font-weight: 500;
-  font-size: clamp(0.7rem, 1.5rem, 36px);
+  font-size: 1.5rem;
   color: #FFFFFF;
 }
 @keyframes fadein {
