@@ -39,7 +39,7 @@
             .navegacao--lista{
                 .lista--item{
                     .item--link{
-                    font-size: 26px;
+                    font-size: var.$tamanho-item-tablet;
                     }
                 }
             }
@@ -55,7 +55,7 @@
                 .lista--item{
                     margin: 5px;
                     .item--link{
-                        font-size:13px
+                        font-size:var.$tamanho-item-celular;
                     }
                 }
             }
