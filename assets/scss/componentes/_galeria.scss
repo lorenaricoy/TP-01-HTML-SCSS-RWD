@@ -39,7 +39,7 @@
                     width: 100%;
                     .descricao--texto{
                         font-weight: 400;
-                        font-size: 24px;
+                        font-size: var.$tamanho-texto-galeria;
                         color: var.$cor-fonte-primaria;
                         width: 60%;
                         margin: 0 auto;
@@ -47,7 +47,7 @@
                     .descricao--titulo{
                         text-transform: uppercase;
                         font-weight: 500;
-                        font-size: var.$tamanho-texto;
+                        font-size: var.$tamanho-titulo-galeria;
                         color: var.$cor-fonte-primaria;
                     }
                 }
@@ -67,10 +67,10 @@
                 .container-imagem{
                     .container-imagem--descricao{
                         .descricao--texto{
-                            font-size: 13px;
+                            font-size: var.$tamanho-texto-galeria-tablet;
                         }
                         .descricao--titulo{
-                            font-size: 20px;
+                            font-size: var.$tamanho-titulo-galeria-tablet;
                         }
                     }
                 }
@@ -93,10 +93,7 @@
                     width: 90%;
                     margin-left: 3%;
                     .descricao--texto{
-                        font-size: 12px;
-                    }
-                    .descricao--titulo{
-                        font-size: 20px;
+                        font-size: var.$tamanho-texto-galeria-celular;
                     }
                 }
             }
