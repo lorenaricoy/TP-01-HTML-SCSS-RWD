@@ -1,0 +1,22 @@
+@use './variaveis' as var;
+
+@mixin estilizaTexto($cor, $divisor) {
+    font-size: calc(var.$tamanho-texto / $divisor);
+    line-height: calc(var.$tamanho-linha / $divisor);
+    font-weight: var.$peso-fonte;
+    color: $cor;
+}
+
+@mixin estilizaTitulo($cor, $divisor) {
+    font-size: calc(var.$tamanho-titulo / $divisor);
+    line-height: calc(var.$tamanho-linha-titulo / $divisor);
+    font-weight: var.$peso-fonte;
+    color: $cor;
+}
+
+@mixin estilizaSubTitulo($cor, $divisor) {
+    font-size: calc(var.$tamanho-subtitulo / $divisor);
+    line-height: calc(var.$tamanho-linha-subtitulo / $divisor);
+    font-weight: var.$peso-fonte ;
+    color: $cor;
+}
