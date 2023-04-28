@@ -11,16 +11,13 @@
 .initial_sect {
     width: 100%;
     position: relative;
-    margin-bottom: 10%;
-
+    margin-bottom: 5%;
     .initial_sect--text {
         width: 40%;
         display: inline-block;
-        
         position: absolute;
         left: 20%;
         top: 40%;
-
         p {
             text-align: center;
             @include mix.estilizaTexto(var.$cor-fonte-primaria, 1);
@@ -29,7 +26,7 @@
 
     .initial_sect--img {
         border-radius: 100%;
-        width: 40%;
+        width: 35%;
         max-width: 800px;
         background: radial-gradient(#845AE7E0 25%, #845AE79E 40%, var.$cor-de-fundo 71%);
         margin-left: 50%;
@@ -42,7 +39,7 @@
     // Todas as seções de conteudo teram esse estilo
     width: 88vw;
     margin-bottom: 10%;
-    
+    margin-left: 5%;
     .content {
         display: inline-block;
         width: 50%;
@@ -216,7 +213,8 @@
     
     /* --- Seção de conteudo --- */
     .content_sect {
-        width: 80vw;        
+        width: 80vw;      
+        margin-left: 10%;  
         .content {            
             &--title {
                 @include mix.estilizaSubTitulo(var.$cor-fonte-secundaria, 1.5);
@@ -296,6 +294,7 @@
             .content_container--text {
                 p {
                     @include mix.estilizaTexto(var.$cor-fonte-secundaria, 1.5);
+                    margin-bottom: 1em;
                 }
             }
         }
@@ -304,43 +303,88 @@
 }
 
 // Media querry intermediario
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
         /* --- Seção de conteudo --- */
-        .content_sect {   
-            .content {
-                display: block;
-                width: 90%;
+        .initial_sect {    
+            .initial_sect--img {
+                width: 45%;
+                margin-left: 40%;
             }
-
+        }
+        .content_sect{
+            margin-left: 8%;
             .side_bar {
-                display: block;
-                width: 90%;
+                .side_bar--title {
+                    
+                }
+                .lista {
+                    margin-top: 6%;
+                    .lista--item {
+                        line-height: 40px;
+                    }
+                }
             }
         }
 }
 
 // Celular
-@media screen and (max-width: 480px){
+@media screen and (max-width: 520px){
         // Seção inicial
         .initial_sect {    
             .initial_sect--text {
-                top: 20%;
+                top: 24%;
+                left: 10%;
                 p {
                     @include mix.estilizaTexto(var.$cor-fonte-primaria, 2);
                 }
+                
             }
         
             .initial_sect--img {
-                width: 65%;
+                width: 45%;
+                margin-left: 40%;
             }
         }
     
     /* --- Seção de conteudo --- */
     .content_sect {   
         .content {
-            margin-top: 20%;
+            margin-top: 4%;
+            width: 90%;
+            .content--text {
+            @include mix.estilizaTexto(var.$cor-fonte-secundaria, 2.25);
+            }
+        }
+        .side_bar {
+            width: 90%;
+            .side_bar--title {
+                @include mix.estilizaSubTitulo(var.$cor-fonte-primaria, 1.5)
+            }
+            .lista {
+                list-style-type: disc;
+                margin-top: 5px;
+                padding-left: 7%;
+    
+                // Estiliza bolinhas
+                color: var.$cor-destaque;
+                font-size: var.$tamanho-texto;
+    
+                .lista--item {
+                    a {
+                        @include mix.estilizaTexto(var.$cor-fonte-primaria, 1.5);
+                        text-decoration: none;
+    
+                        &:hover {
+                            text-decoration: underline;
+                            color: var.$cor-destaque;
+                        }
+                    }
+                }
+            }
         }
     }
+
+
 
     // Caracteristicas
     .caracteristicas{

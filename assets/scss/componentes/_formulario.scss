@@ -8,7 +8,7 @@
     &::placeholder{
         color: var.$cor-fonte-primaria;
         font-weight: 500;
-        font-size: $tamanho-placeholder;
+        font-size: var.$tamanho-placeholder;
         font-family: var.$fonte;
     }
 }
