@@ -560,7 +560,7 @@ body {
 }*/
 @media screen and (max-width: 480px) {
   .container .container2 {
-    margin: 1em auto 2em 3em;
+    margin: auto;
   }
   .container .container2 main {
     flex-direction: column;
@@ -606,8 +606,131 @@ body {
 @media screen and (max-width: 480px) {
   .container .container2 main .card-informacoes {
     width: 90%;
+    margin: 1em auto 2em 3em;
   }
   .container .container2 main .card-informacoes .card-informações--imagem {
     width: 90%;
+  }
+}
+.contato {
+  width: 85%;
+  margin: 0 auto 2em auto;
+}
+.contato .titulo {
+  font-size: 30px;
+  color: #FFFFFF;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.contato .formulario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.contato .formulario .input {
+  width: 28%;
+  height: 3em;
+  background-color: rgba(217, 199, 199, 0.1490196078);
+  border-radius: 10px;
+  border-width: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.contato .formulario .input::-moz-placeholder {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+}
+.contato .formulario .input::placeholder {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+}
+.contato .formulario .gostou {
+  width: 31%;
+}
+.contato .formulario .gostou .label-gostou {
+  color: #FFFFFF;
+}
+.contato .formulario .gostou .input-gostou {
+  color: #FFFFFF;
+}
+.contato .formulario .input-email {
+  background-color: rgba(217, 199, 199, 0.1490196078);
+  border-radius: 10px;
+  border-width: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 3em;
+  width: 62%;
+}
+.contato .formulario .input-email::-moz-placeholder {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+}
+.contato .formulario .input-email::placeholder {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+}
+.contato .formulario #mensagem {
+  background-color: rgba(217, 199, 199, 0.1490196078);
+  border-radius: 10px;
+  border-width: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 95%;
+}
+.contato .formulario #mensagem::-moz-placeholder {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+}
+.contato .formulario #mensagem::placeholder {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+}
+.contato .formulario .botao-submit {
+  width: 30%;
+  margin-left: 68%;
+  background-color: rgba(132, 90, 231, 0.5490196078);
+  height: 2.5em;
+  border-radius: 10px;
+  border-width: 0;
+  color: #FFFFFF;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 900px) {
+  .contato {
+    width: 100%;
+    margin-right: 2em;
+  }
+  .contato .formulario .input {
+    width: 24%;
+  }
+  .contato .formulario .gostou {
+    width: 100%;
+  }
+  .contato .formulario .input-email {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contato .formulario {
+    gap: 1em;
+  }
+  .contato .formulario .input {
+    width: 90%;
+    height: 2em;
   }
 }/*# sourceMappingURL=style.css.map */

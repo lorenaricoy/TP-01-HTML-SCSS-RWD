@@ -1,0 +1,95 @@
+@use '../abstract/variaveis' as var;
+@mixin estiliza-input(){
+    background-color: var.$cor-input;
+    border-radius: 10px;
+    border-width: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    &::placeholder{
+        color: var.$cor-fonte-primaria;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: var.$fonte;
+    }
+}
+.contato{
+    width: 85%;
+    margin: 0 auto 2em auto;
+    .titulo{
+        font-size: 30px;
+        color: var.$cor-fonte-primaria;
+        font-weight: 600;
+        margin-bottom: 0.5em;
+    }
+    .formulario{
+        display: flex;
+        flex-wrap: wrap;
+        gap:1em;
+        .input{
+            width: 28%;
+            height: 3em;
+            @include estiliza-input();
+        }
+        .gostou{
+            width: 31%;
+            .label-gostou{
+                color: var.$cor-fonte-primaria;
+            }
+            .input-gostou{
+                color: var.$cor-fonte-primaria;
+            }
+        }
+        .input-email{
+            @include estiliza-input();
+            height: 3em;
+            width:62%;
+        }
+        #mensagem{
+            @include estiliza-input();
+            width: 95%;
+        }
+        .botao-submit{
+            width: 30%;
+            margin-left: 68%;
+            background-color: var.$cor-destaque;
+            height: 2.5em;
+            border-radius: 10px;
+            border-width: 0;
+            color: var.$cor-fonte-primaria;
+            font-family: var.$fonte;
+            font-weight: 600;
+        }
+    }
+}
+@media screen and (max-width: 900px){
+
+    .contato{
+        width: 100%;
+        margin-right: 2em;
+        .formulario{
+            .input{
+                width: 24%;
+            }
+            .gostou{
+                width: 100%;
+            }
+            .input-email{
+                width: 95%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+
+    .contato{
+        .formulario{
+
+            gap:1em;
+            .input{
+                width: 90%;
+                height: 2em;
+            }
+            
+        }
+    }
+}

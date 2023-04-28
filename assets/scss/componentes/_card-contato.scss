@@ -3,6 +3,7 @@
     .container2{
         main{
             .card-informacoes{
+                
                 margin-bottom: 2em;
                 width: 25%;
                 transition: width 2s;
@@ -57,6 +58,7 @@
             main{
                 .card-informacoes{
                     width: 90%;
+                    margin: 1em auto 2em 3em;
                     .card-informações--imagem{
                         width: 90%;
                     }
