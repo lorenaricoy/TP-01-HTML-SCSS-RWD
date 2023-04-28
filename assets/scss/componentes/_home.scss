@@ -1,23 +1,23 @@
 @use '../abstract/variaveis' as var;
 
-@mixin estilizaTexto($cor) {
-    font-size: var.$tamanho-texto;
+@mixin estilizaTexto($cor, $divisor) {
+    font-size: calc(var.$tamanho-texto / $divisor);
+    line-height: calc(var.$tamanho-linha / $divisor);
     font-weight: var.$peso-fonte;
-    line-height: var.$tamanho-linha;
     color: $cor;
 }
 
-@mixin estilizaTitulo($cor) {
-    font-size: var.$tamanho-titulo;
+@mixin estilizaTitulo($cor, $divisor) {
+    font-size: calc(var.$tamanho-titulo / $divisor);
+    line-height: calc(var.$tamanho-linha-titulo / $divisor);
     font-weight: var.$peso-fonte;
-    line-height: var.$tamanho-linha-titulo;
     color: $cor;
 }
 
-@mixin estilizaSubTitulo($cor) {
-    font-size: var.$tamanho-subtitulo;
-    font-weight: var.$peso-fonte;
-    line-height: var.$tamanho-linha-subtitulo;
+@mixin estilizaSubTitulo($cor, $divisor) {
+    font-size: calc(var.$tamanho-subtitulo / $divisor);
+    line-height: calc(var.$tamanho-linha-subtitulo / $divisor);
+    font-weight: var.$peso-fonte ;
     color: $cor;
 }
 
@@ -42,7 +42,7 @@
 
         p {
             text-align: center;
-            @include estilizaTexto(var.$cor-fonte-primaria);
+            @include estilizaTexto(var.$cor-fonte-primaria, 1);
         }
     }
 
@@ -59,7 +59,7 @@
 /* --- Seção de conteudo --- */
 .content_sect {
     // Todas as seções de conteudo teram esse estilo
-    width: 90vw;
+    width: 88vw;
     margin-bottom: 10%;
     
     .content {
@@ -70,11 +70,11 @@
         border-radius: 30px;
         
         &--title {
-            @include estilizaSubTitulo(var.$cor-fonte-secundaria);
+            @include estilizaSubTitulo(var.$cor-fonte-secundaria, 1);
         }
 
         &--text {
-            @include estilizaTexto(var.$cor-fonte-secundaria);
+            @include estilizaTexto(var.$cor-fonte-secundaria, 1);
         }
     }
 
@@ -86,7 +86,7 @@
         margin-left: 4%;
 
         .side_bar--title {
-            @include estilizaSubTitulo(var.$cor-fonte-primaria)
+            @include estilizaSubTitulo(var.$cor-fonte-primaria, 1)
         }
 
         .lista {
@@ -101,7 +101,7 @@
             .lista--item {
                 line-height: 60px;
                 a {
-                    @include estilizaTexto(var.$cor-fonte-primaria);
+                    @include estilizaTexto(var.$cor-fonte-primaria, 1);
                     text-decoration: none;
 
                     &:hover {
@@ -132,7 +132,7 @@
 .content_sect {
     .neofascismo {
         &--title {
-            @include estilizaTitulo(var.$cor-fonte-primaria);
+            @include estilizaTitulo(var.$cor-fonte-primaria, 1);
             margin-bottom: 4%;
         }
 
@@ -146,7 +146,7 @@
             }
 
             &--text {
-                @include estilizaTexto(var.$cor-fonte-primaria);
+                @include estilizaTexto(var.$cor-fonte-primaria, 1);
                 width: 80%;
             }
         }
@@ -157,7 +157,7 @@
 /* --- Seção de caracteristicas --- */
 .caracteristicas{
     .caracteristicas--titulo{
-        @include estilizaTitulo(var.$cor-fonte-primaria);
+        @include estilizaTitulo(var.$cor-fonte-primaria, 1);
         margin-bottom: 1em;
     }
     .cards{
@@ -185,7 +185,7 @@
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
                 .titulo{
-                    @include estilizaTexto(var.$cor-fonte-primaria)
+                    @include estilizaTexto(var.$cor-fonte-primaria, 1);
                 }
             }
         }
@@ -205,23 +205,70 @@
                 background-color: #845AE78C;
                 padding: 2%;
 
-                @include estilizaTitulo(var.$cor-fonte-primaria);
+                @include estilizaTitulo(var.$cor-fonte-primaria, 1);
             }
         }
 
         .content_container--text {
             padding: 5%;
             p {
-                @include estilizaTexto(var.$cor-fonte-secundaria)
+                @include estilizaTexto(var.$cor-fonte-secundaria, 1)
             }
         }
     }
 }
 
+// Tablet
 @media screen and (max-width: 1200px){
+    // Seção inicial
+    .initial_sect {    
+        .initial_sect--text {
+            p {
+                @include estilizaTexto(var.$cor-fonte-primaria, 1.5);
+            }
+        }
+    
+        .initial_sect--img {
+            width: 60%;
+        }
+    }
+    
+    /* --- Seção de conteudo --- */
+    .content_sect {
+        width: 80vw;        
+        .content {            
+            &--title {
+                @include estilizaSubTitulo(var.$cor-fonte-secundaria, 1.5);
+            }
 
+            &--text {
+                @include estilizaTexto(var.$cor-fonte-secundaria, 1.5);
+            }
+        }
 
+        .side_bar {
+
+            .side_bar--title {
+                @include estilizaSubTitulo(var.$cor-fonte-primaria, 1.5)
+            }
+
+            .lista {
+                .lista--item {
+                    a {
+                        @include estilizaTexto(var.$cor-fonte-primaria, 1.5);
+                    }
+                }
+            }
+        }
+    }
+
+    // Seção de caracteristicas
     .caracteristicas{
+        width: 86vw;
+        .caracteristicas--titulo{
+            @include estilizaTitulo(var.$cor-fonte-primaria, 1.5);
+        }
+
         .cards{
             .container-caracteristica{
                 width: 45%;
@@ -229,13 +276,92 @@
                 .container-caracteristica--imagem{
                     width: 100%;
                 }
-                
+                .container-caracteristica--titulo{
+                    .titulo{
+                        @include estilizaTexto(var.$cor-fonte-primaria, 1.5);
+                    }
+                }
             }
         }
     }
+
+    // Seção neofascismo
+    .content_sect {
+        .neofascismo {
+            &--title {
+                @include estilizaTitulo(var.$cor-fonte-primaria, 1.5);
+            }
+
+            .content_neofascismo {
+                &--text {
+                    @include estilizaTexto(var.$cor-fonte-primaria, 1.5);
+                }
+            }
+            
+        }
+    }
+
+    
+    // Seção final
+    .content_sect {
+        .content_container {
+            
+            .content_container--title {
+                h2 {
+                    @include estilizaTitulo(var.$cor-fonte-primaria, 1.5);
+                }
+            }
+
+            .content_container--text {
+                p {
+                    @include estilizaTexto(var.$cor-fonte-secundaria, 1.5);
+                }
+            }
+        }
+    }
+
 }
 
+// Media querry intermediario
+@media screen and (max-width: 600px) {
+        /* --- Seção de conteudo --- */
+        .content_sect {   
+            .content {
+                display: block;
+                width: 90%;
+            }
+
+            .side_bar {
+                display: block;
+                width: 90%;
+            }
+        }
+}
+
+// Celular
 @media screen and (max-width: 480px){
+        // Seção inicial
+        .initial_sect {    
+            .initial_sect--text {
+                top: 20%;
+                p {
+                    @include estilizaTexto(var.$cor-fonte-primaria, 2);
+                }
+            }
+        
+            .initial_sect--img {
+                width: 65%;
+            }
+        }
+    
+    /* --- Seção de conteudo --- */
+    .content_sect {   
+        .content {
+            margin-top: 20%;
+        }
+    }
+
+    // Caracteristicas
     .caracteristicas{
         .cards{
             display: flex;
@@ -245,6 +371,25 @@
                 width: 90%;
                 .container-caracteristica--imagem{
                     width: 100%;
+                }
+            }
+        }
+    }
+
+        
+    // Seção final
+    .content_sect {
+        .content_container {
+            .content_container--title {
+                h2 {
+                    padding: 10%;
+                    @include estilizaTitulo(var.$cor-fonte-primaria, 2.5);
+                }
+            }
+
+            .content_container--text {
+                p {
+                    @include estilizaTexto(var.$cor-fonte-secundaria, 1.5);
                 }
             }
         }

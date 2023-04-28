@@ -78,8 +78,8 @@ body {
 .initial_sect .initial_sect--text p {
   text-align: center;
   font-size: 1.5rem;
-  font-weight: 600;
   line-height: 2rem;
+  font-weight: 600;
   color: #FFFFFF;
 }
 .initial_sect .initial_sect--img {
@@ -93,7 +93,7 @@ body {
 
 /* --- Seção de conteudo --- */
 .content_sect {
-  width: 90vw;
+  width: 88vw;
   margin-bottom: 10%;
 }
 .content_sect .content {
@@ -105,14 +105,14 @@ body {
 }
 .content_sect .content--title {
   font-size: 2.2rem;
-  font-weight: 600;
   line-height: 2.5rem;
+  font-weight: 600;
   color: #1E1E1E;
 }
 .content_sect .content--text {
   font-size: 1.5rem;
-  font-weight: 600;
   line-height: 2rem;
+  font-weight: 600;
   color: #1E1E1E;
 }
 .content_sect .side_bar {
@@ -124,8 +124,8 @@ body {
 }
 .content_sect .side_bar .side_bar--title {
   font-size: 2.2rem;
-  font-weight: 600;
   line-height: 2.5rem;
+  font-weight: 600;
   color: #FFFFFF;
 }
 .content_sect .side_bar .lista {
@@ -140,8 +140,8 @@ body {
 }
 .content_sect .side_bar .lista .lista--item a {
   font-size: 1.5rem;
-  font-weight: 600;
   line-height: 2rem;
+  font-weight: 600;
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -168,8 +168,8 @@ body {
 */
 .content_sect .neofascismo--title {
   font-size: 3.5rem;
-  font-weight: 600;
   line-height: 3.8rem;
+  font-weight: 600;
   color: #FFFFFF;
   margin-bottom: 4%;
 }
@@ -183,8 +183,8 @@ body {
 }
 .content_sect .neofascismo .content_neofascismo--text {
   font-size: 1.5rem;
-  font-weight: 600;
   line-height: 2rem;
+  font-weight: 600;
   color: #FFFFFF;
   width: 80%;
 }
@@ -192,8 +192,8 @@ body {
 /* --- Seção de caracteristicas --- */
 .caracteristicas .caracteristicas--titulo {
   font-size: 3.5rem;
-  font-weight: 600;
   line-height: 3.8rem;
+  font-weight: 600;
   color: #FFFFFF;
   margin-bottom: 1em;
 }
@@ -226,8 +226,8 @@ body {
 }
 .caracteristicas .cards .container-caracteristica .container-caracteristica--titulo .titulo {
   font-size: 1.5rem;
-  font-weight: 600;
   line-height: 2rem;
+  font-weight: 600;
   color: #FFFFFF;
 }
 
@@ -242,8 +242,8 @@ body {
   background-color: rgba(132, 90, 231, 0.5490196078);
   padding: 2%;
   font-size: 3.5rem;
-  font-weight: 600;
   line-height: 3.8rem;
+  font-weight: 600;
   color: #FFFFFF;
 }
 .content_sect .content_container .content_container--text {
@@ -251,20 +251,123 @@ body {
 }
 .content_sect .content_container .content_container--text p {
   font-size: 1.5rem;
-  font-weight: 600;
   line-height: 2rem;
+  font-weight: 600;
   color: #1E1E1E;
 }
 
 @media screen and (max-width: 1200px) {
+  .initial_sect .initial_sect--text p {
+    font-size: 1rem;
+    line-height: 1.3333333333rem;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+  .initial_sect .initial_sect--img {
+    width: 60%;
+  }
+  /* --- Seção de conteudo --- */
+  .content_sect {
+    width: 80vw;
+  }
+  .content_sect .content--title {
+    font-size: 1.4666666667rem;
+    line-height: 1.6666666667rem;
+    font-weight: 600;
+    color: #1E1E1E;
+  }
+  .content_sect .content--text {
+    font-size: 1rem;
+    line-height: 1.3333333333rem;
+    font-weight: 600;
+    color: #1E1E1E;
+  }
+  .content_sect .side_bar .side_bar--title {
+    font-size: 1.4666666667rem;
+    line-height: 1.6666666667rem;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+  .content_sect .side_bar .lista .lista--item a {
+    font-size: 1rem;
+    line-height: 1.3333333333rem;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+  .caracteristicas {
+    width: 86vw;
+  }
+  .caracteristicas .caracteristicas--titulo {
+    font-size: 2.3333333333rem;
+    line-height: 2.5333333333rem;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
   .caracteristicas .cards .container-caracteristica {
     width: 45%;
   }
   .caracteristicas .cards .container-caracteristica .container-caracteristica--imagem {
     width: 100%;
   }
+  .caracteristicas .cards .container-caracteristica .container-caracteristica--titulo .titulo {
+    font-size: 1rem;
+    line-height: 1.3333333333rem;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+  .content_sect .neofascismo--title {
+    font-size: 2.3333333333rem;
+    line-height: 2.5333333333rem;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+  .content_sect .neofascismo .content_neofascismo--text {
+    font-size: 1rem;
+    line-height: 1.3333333333rem;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+  .content_sect .content_container .content_container--title h2 {
+    font-size: 2.3333333333rem;
+    line-height: 2.5333333333rem;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+  .content_sect .content_container .content_container--text p {
+    font-size: 1rem;
+    line-height: 1.3333333333rem;
+    font-weight: 600;
+    color: #1E1E1E;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* --- Seção de conteudo --- */
+  .content_sect .content {
+    display: block;
+    width: 90%;
+  }
+  .content_sect .side_bar {
+    display: block;
+    width: 90%;
+  }
 }
 @media screen and (max-width: 480px) {
+  .initial_sect .initial_sect--text {
+    top: 20%;
+  }
+  .initial_sect .initial_sect--text p {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+  .initial_sect .initial_sect--img {
+    width: 65%;
+  }
+  /* --- Seção de conteudo --- */
+  .content_sect .content {
+    margin-top: 20%;
+  }
   .caracteristicas .cards {
     display: flex;
     flex-direction: column;
@@ -275,6 +378,19 @@ body {
   }
   .caracteristicas .cards .container-caracteristica .container-caracteristica--imagem {
     width: 100%;
+  }
+  .content_sect .content_container .content_container--title h2 {
+    padding: 10%;
+    font-size: 1.4rem;
+    line-height: 1.52rem;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+  .content_sect .content_container .content_container--text p {
+    font-size: 1rem;
+    line-height: 1.3333333333rem;
+    font-weight: 600;
+    color: #1E1E1E;
   }
 }
 .rodape {
