@@ -8,7 +8,9 @@
         transform: rotate(90deg);
         .navegacao--lista{
             display: flex;
+            align-items: center;
             .lista--item{
+                width: 222vw;
                 margin: 12px;
                 .item--link{
                 text-decoration: none;

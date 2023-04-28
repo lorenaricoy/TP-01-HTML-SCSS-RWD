@@ -20,8 +20,10 @@ body {
 }
 .container1 .navegacao .navegacao--lista {
   display: flex;
+  align-items: center;
 }
 .container1 .navegacao .navegacao--lista .lista--item {
+  width: 222vw;
   margin: 12px;
 }
 .container1 .navegacao .navegacao--lista .lista--item .item--link {
