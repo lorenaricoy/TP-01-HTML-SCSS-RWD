@@ -5,6 +5,7 @@
     margin-bottom: 1em;
     color: var.$cor-fonte-primaria;
 }
+
 .rodape{
     background-color: 
     #363636;
@@ -80,13 +81,49 @@
     }
 }
 
+@media screen and (max-width: 900px){
+    .rodape{
+
+        
+        .card-contato{
+            .card-contato--titulo{
+                font-size: 28px;
+            }
+        }
+        .card-liks-referencia{
+            .card-liks-referencia--titulo{
+                font-size: 28px;
+            }
+            .lista--links-referencia{
+                .lista--item{
+                    .lista--link{
+                        font-size: 10px;
+                    }
+                    .seta{
+                        width: 6%;
+                    }
+                }
+            }
+        }
+        .card-sobre-nos{
+            .card-sobre-nos--titulo{
+                font-size: 28px;
+            }
+            .paragrafo--sobre-nos{
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 12.5px;
+            }
+        }
+    }
+}
 @media screen and (max-width: 480px){
     .rodape{
         padding: 2em 1em;
         .cards{
             .cards--titulo{
                 font-weight: 600;
-                font-size: 16px;
+                font-size: 18px;
                 margin-bottom: 1em;;
             }
         }
