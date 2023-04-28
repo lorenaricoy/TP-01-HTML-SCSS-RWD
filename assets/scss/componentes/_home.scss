@@ -1,29 +1,10 @@
 @use '../abstract/variaveis' as var;
-
-@mixin estilizaTexto($cor, $divisor) {
-    font-size: calc(var.$tamanho-texto / $divisor);
-    line-height: calc(var.$tamanho-linha / $divisor);
-    font-weight: var.$peso-fonte;
-    color: $cor;
-}
-
-@mixin estilizaTitulo($cor, $divisor) {
-    font-size: calc(var.$tamanho-titulo / $divisor);
-    line-height: calc(var.$tamanho-linha-titulo / $divisor);
-    font-weight: var.$peso-fonte;
-    color: $cor;
-}
-
-@mixin estilizaSubTitulo($cor, $divisor) {
-    font-size: calc(var.$tamanho-subtitulo / $divisor);
-    line-height: calc(var.$tamanho-linha-subtitulo / $divisor);
-    font-weight: var.$peso-fonte ;
-    color: $cor;
-}
+@use '../abstract/mixins' as mix;
 
 // Home geral
 #Home {
     display: flex;
+    margin-left: 5vw;
 }
 
 /* --- Seção do inicio da pagina --- */
@@ -42,7 +23,7 @@
 
         p {
             text-align: center;
-            @include estilizaTexto(var.$cor-fonte-primaria, 1);
+            @include mix.estilizaTexto(var.$cor-fonte-primaria, 1);
         }
     }
 
@@ -70,11 +51,11 @@
         border-radius: 30px;
         
         &--title {
-            @include estilizaSubTitulo(var.$cor-fonte-secundaria, 1);
+            @include mix.estilizaSubTitulo(var.$cor-fonte-secundaria, 1);
         }
 
         &--text {
-            @include estilizaTexto(var.$cor-fonte-secundaria, 1);
+            @include mix.estilizaTexto(var.$cor-fonte-secundaria, 1);
         }
     }
 
@@ -86,7 +67,7 @@
         margin-left: 4%;
 
         .side_bar--title {
-            @include estilizaSubTitulo(var.$cor-fonte-primaria, 1)
+            @include mix.estilizaSubTitulo(var.$cor-fonte-primaria, 1)
         }
 
         .lista {
@@ -101,7 +82,7 @@
             .lista--item {
                 line-height: 60px;
                 a {
-                    @include estilizaTexto(var.$cor-fonte-primaria, 1);
+                    @include mix.estilizaTexto(var.$cor-fonte-primaria, 1);
                     text-decoration: none;
 
                     &:hover {
@@ -118,12 +99,12 @@
 .content_sect {
     .content2 {
         &--title {
-            @include estilizaTitulo(var.$cor-fonte-primaria);
+            @include mix.estilizaTitulo(var.$cor-fonte-primaria);
         }
 
         div {
             .content2--text {
-                @include estilizaTexto(var.$cor-fonte-primaria);
+                @include mix.estilizaTexto(var.$cor-fonte-primaria);
             }
         }
     }
@@ -132,7 +113,7 @@
 .content_sect {
     .neofascismo {
         &--title {
-            @include estilizaTitulo(var.$cor-fonte-primaria, 1);
+            @include mix.estilizaTitulo(var.$cor-fonte-primaria, 1);
             margin-bottom: 4%;
         }
 
@@ -146,7 +127,7 @@
             }
 
             &--text {
-                @include estilizaTexto(var.$cor-fonte-primaria, 1);
+                @include mix.estilizaTexto(var.$cor-fonte-primaria, 1);
                 width: 80%;
             }
         }
@@ -157,7 +138,7 @@
 /* --- Seção de caracteristicas --- */
 .caracteristicas{
     .caracteristicas--titulo{
-        @include estilizaTitulo(var.$cor-fonte-primaria, 1);
+        @include mix.estilizaTitulo(var.$cor-fonte-primaria, 1);
         margin-bottom: 1em;
     }
     .cards{
@@ -185,7 +166,7 @@
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
                 .titulo{
-                    @include estilizaTexto(var.$cor-fonte-primaria, 1);
+                    @include mix.estilizaTexto(var.$cor-fonte-primaria, 1);
                 }
             }
         }
@@ -205,14 +186,14 @@
                 background-color: #845AE78C;
                 padding: 2%;
 
-                @include estilizaTitulo(var.$cor-fonte-primaria, 1);
+                @include mix.estilizaTitulo(var.$cor-fonte-primaria, 1);
             }
         }
 
         .content_container--text {
             padding: 5%;
             p {
-                @include estilizaTexto(var.$cor-fonte-secundaria, 1)
+                @include mix.estilizaTexto(var.$cor-fonte-secundaria, 1)
             }
         }
     }
@@ -224,7 +205,7 @@
     .initial_sect {    
         .initial_sect--text {
             p {
-                @include estilizaTexto(var.$cor-fonte-primaria, 1.5);
+                @include mix.estilizaTexto(var.$cor-fonte-primaria, 1.5);
             }
         }
     
@@ -238,24 +219,24 @@
         width: 80vw;        
         .content {            
             &--title {
-                @include estilizaSubTitulo(var.$cor-fonte-secundaria, 1.5);
+                @include mix.estilizaSubTitulo(var.$cor-fonte-secundaria, 1.5);
             }
 
             &--text {
-                @include estilizaTexto(var.$cor-fonte-secundaria, 1.5);
+                @include mix.estilizaTexto(var.$cor-fonte-secundaria, 1.5);
             }
         }
 
         .side_bar {
 
             .side_bar--title {
-                @include estilizaSubTitulo(var.$cor-fonte-primaria, 1.5)
+                @include mix.estilizaSubTitulo(var.$cor-fonte-primaria, 1.5)
             }
 
             .lista {
                 .lista--item {
                     a {
-                        @include estilizaTexto(var.$cor-fonte-primaria, 1.5);
+                        @include mix.estilizaTexto(var.$cor-fonte-primaria, 1.5);
                     }
                 }
             }
@@ -266,7 +247,7 @@
     .caracteristicas{
         width: 86vw;
         .caracteristicas--titulo{
-            @include estilizaTitulo(var.$cor-fonte-primaria, 1.5);
+            @include mix.estilizaTitulo(var.$cor-fonte-primaria, 1.5);
         }
 
         .cards{
@@ -278,7 +259,7 @@
                 }
                 .container-caracteristica--titulo{
                     .titulo{
-                        @include estilizaTexto(var.$cor-fonte-primaria, 1.5);
+                        @include mix.estilizaTexto(var.$cor-fonte-primaria, 1.5);
                     }
                 }
             }
@@ -289,12 +270,12 @@
     .content_sect {
         .neofascismo {
             &--title {
-                @include estilizaTitulo(var.$cor-fonte-primaria, 1.5);
+                @include mix.estilizaTitulo(var.$cor-fonte-primaria, 1.5);
             }
 
             .content_neofascismo {
                 &--text {
-                    @include estilizaTexto(var.$cor-fonte-primaria, 1.5);
+                    @include mix.estilizaTexto(var.$cor-fonte-primaria, 1.5);
                 }
             }
             
@@ -308,13 +289,13 @@
             
             .content_container--title {
                 h2 {
-                    @include estilizaTitulo(var.$cor-fonte-primaria, 1.5);
+                    @include mix.estilizaTitulo(var.$cor-fonte-primaria, 1.5);
                 }
             }
 
             .content_container--text {
                 p {
-                    @include estilizaTexto(var.$cor-fonte-secundaria, 1.5);
+                    @include mix.estilizaTexto(var.$cor-fonte-secundaria, 1.5);
                 }
             }
         }
@@ -345,7 +326,7 @@
             .initial_sect--text {
                 top: 20%;
                 p {
-                    @include estilizaTexto(var.$cor-fonte-primaria, 2);
+                    @include mix.estilizaTexto(var.$cor-fonte-primaria, 2);
                 }
             }
         
@@ -383,13 +364,13 @@
             .content_container--title {
                 h2 {
                     padding: 10%;
-                    @include estilizaTitulo(var.$cor-fonte-primaria, 2.5);
+                    @include mix.estilizaTitulo(var.$cor-fonte-primaria, 2.5);
                 }
             }
 
             .content_container--text {
                 p {
-                    @include estilizaTexto(var.$cor-fonte-secundaria, 1.5);
+                    @include mix.estilizaTexto(var.$cor-fonte-secundaria, 1.5);
                 }
             }
         }

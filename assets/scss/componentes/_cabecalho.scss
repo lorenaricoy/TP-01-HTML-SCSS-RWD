@@ -1,4 +1,11 @@
 @use '../abstract/variaveis' as var;
+@use '../abstract/mixins' as mix;
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
+
+.init {
+    display: flex;
+}
+
 .container1{
     display: flex;
     gap: 1em;
@@ -26,6 +33,14 @@
     }
 }
 
+.cabecalho {
+    padding-left: 38%;
+    &--title {
+        font-family: 'Radley', serif;
+        @include mix.estilizaTitulo(var.$cor-fonte-primaria, 1);
+    }
+}
+
 /*@media screen and (max-width: 880px){
     .container1{
         max-width: 8vw;
@@ -33,6 +48,13 @@
 }*/
 
 @media screen and (max-width: 900px){
+    .cabecalho {
+        padding-left: 32%;
+        &--title {
+            @include mix.estilizaTitulo(var.$cor-fonte-primaria, 1.5);
+        }
+    }
+
     .container1{
         width: 10vw;
         .navegacao{
@@ -48,6 +70,12 @@
 }
 
 @media screen and (max-width: 480px){
+    .cabecalho {
+        padding-left: 28%;
+        &--title {
+            @include mix.estilizaTitulo(var.$cor-fonte-primaria, 2);
+        }
+    }
     .container1{
         width: 8vw;
         .navegacao{
