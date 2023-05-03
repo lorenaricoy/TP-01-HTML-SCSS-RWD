@@ -91,22 +91,7 @@
         }
     }
 }
-/*
-// --- Segunda seção de conteudo --- 
-.content_sect {
-    .content2 {
-        &--title {
-            @include mix.estilizaTitulo(var.$cor-fonte-primaria);
-        }
 
-        div {
-            .content2--text {
-                @include mix.estilizaTexto(var.$cor-fonte-primaria);
-            }
-        }
-    }
-}
-*/
 .content_sect {
     .neofascismo {
         &--title {
@@ -314,9 +299,6 @@
         .content_sect{
             margin-left: 8%;
             .side_bar {
-                .side_bar--title {
-                    
-                }
                 .lista {
                     margin-top: 6%;
                     .lista--item {
