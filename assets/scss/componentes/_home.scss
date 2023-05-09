@@ -44,7 +44,7 @@
         display: inline-block;
         width: 50%;
         padding: 5%;
-        background-color: var.$cor-fonte-primaria;
+        background-color: white;
         border-radius: 30px;
         
         &--title {
@@ -120,7 +120,7 @@
 /* --- Seção de caracteristicas --- */
 .caracteristicas{
     .caracteristicas--titulo{
-        @include mix.estilizaTitulo(var.$cor-fonte-primaria, 1);
+        @include mix.estilizaTitulo(var.$cor-destaque, 1);
         margin-bottom: 1em;
     }
     .cards{
@@ -139,7 +139,7 @@
             .container-caracteristica--titulo{
                 position: absolute;
                 bottom: 0;
-                background-color: rgba($color: var.$cor-destaque, $alpha: 1.0);
+                background-color: white;
                 width: 100%;
                 height: 30%;
                 display: flex;
@@ -156,30 +156,30 @@
 }
 
 /* --- Seção final --- */
-.content_sect {
-    .content_container {
-        border-radius: 30px;
-        background-color: var.$cor-fonte-primaria;
+// .content_sect {
+//     .content_container {
+//         border-radius: 30px;
+//         background-color: var.$cor-fonte-primaria;
         
-        .content_container--title {
-            h2 {
-                border-top-left-radius: 30px;
-                border-top-right-radius: 30px;
-                background-color: #845AE78C;
-                padding: 2%;
+//         .content_container--title {
+//             h2 {
+//                 border-top-left-radius: 30px;
+//                 border-top-right-radius: 30px;
+//                 background-color: #845AE78C;
+//                 padding: 2%;
 
-                @include mix.estilizaTitulo(var.$cor-fonte-primaria, 1);
-            }
-        }
+//                 @include mix.estilizaTitulo(var.$cor-fonte-primaria, 1);
+//             }
+//         }
 
-        .content_container--text {
-            padding: 5%;
-            p {
-                @include mix.estilizaTexto(var.$cor-fonte-secundaria, 1)
-            }
-        }
-    }
-}
+//         .content_container--text {
+//             padding: 5%;
+//             p {
+//                 @include mix.estilizaTexto(var.$cor-fonte-secundaria, 1)
+//             }
+//         }
+//     }
+// }
 
 // Tablet
 @media screen and (max-width: 1200px){
@@ -230,7 +230,7 @@
     .caracteristicas{
         width: 86vw;
         .caracteristicas--titulo{
-            @include mix.estilizaTitulo(var.$cor-fonte-primaria, 1.5);
+            @include mix.estilizaTitulo(var.$cor-destaque, 1.5);
         }
 
         .cards{
@@ -242,7 +242,7 @@
                 }
                 .container-caracteristica--titulo{
                     .titulo{
-                        @include mix.estilizaTexto(var.$cor-fonte-primaria, 1.5);
+                        @include mix.estilizaTexto(black, 1.5);
                     }
                 }
             }
@@ -267,23 +267,23 @@
 
     
     // Seção final
-    .content_sect {
-        .content_container {
+    // .content_sect {
+    //     .content_container {
             
-            .content_container--title {
-                h2 {
-                    @include mix.estilizaTitulo(var.$cor-fonte-primaria, 1.5);
-                }
-            }
+    //         .content_container--title {
+    //             h2 {
+    //                 @include mix.estilizaTitulo(var.$cor-fonte-primaria, 1.5);
+    //             }
+    //         }
 
-            .content_container--text {
-                p {
-                    @include mix.estilizaTexto(var.$cor-fonte-secundaria, 1.5);
-                    margin-bottom: 1em;
-                }
-            }
-        }
-    }
+    //         .content_container--text {
+    //             p {
+    //                 @include mix.estilizaTexto(var.$cor-fonte-secundaria, 1.5);
+    //                 margin-bottom: 1em;
+    //             }
+    //         }
+    //     }
+    // }
 
 }
 
@@ -385,20 +385,20 @@
 
         
     // Seção final
-    .content_sect {
-        .content_container {
-            .content_container--title {
-                h2 {
-                    padding: 10%;
-                    @include mix.estilizaTitulo(var.$cor-fonte-primaria, 2.5);
-                }
-            }
+    // .content_sect {
+    //     .content_container {
+    //         .content_container--title {
+    //             h2 {
+    //                 padding: 10%;
+    //                 @include mix.estilizaTitulo(var.$cor-fonte-primaria, 2.5);
+    //             }
+    //         }
 
-            .content_container--text {
-                p {
-                    @include mix.estilizaTexto(var.$cor-fonte-secundaria, 1.5);
-                }
-            }
-        }
-    }
+    //         .content_container--text {
+    //             p {
+    //                 @include mix.estilizaTexto(var.$cor-fonte-secundaria, 1.5);
+    //             }
+    //         }
+    //     }
+    // }
 }

@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap");
 html, body {
   font-family: "Quicksand", sans-serif;
-  background-color: #1C1C1C;
+  background-color: #FEF8E6;
 }
 
 body {
@@ -34,12 +34,12 @@ body {
 }
 .container1 .navegacao .navegacao--lista .lista--item .item--link {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #64510D;
   font-size: 1.5rem;
   text-transform: uppercase;
 }
 .container1 .navegacao .navegacao--lista .lista--item .item--link:hover {
-  color: rgba(132, 90, 231, 0.5490196078);
+  color: #DCA2AD;
 }
 
 .cabecalho {
@@ -50,14 +50,9 @@ body {
   font-size: 3.5rem;
   line-height: 3.8rem;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #64510D;
 }
 
-/*@media screen and (max-width: 880px){
-    .container1{
-        max-width: 8vw;
-    }
-}*/
 @media screen and (max-width: 900px) {
   .cabecalho {
     padding-left: 32%;
@@ -66,7 +61,7 @@ body {
     font-size: 2.3333333333rem;
     line-height: 2.5333333333rem;
     font-weight: 600;
-    color: #FFFFFF;
+    color: #64510D;
   }
   .container1 {
     width: 10vw;
@@ -83,7 +78,7 @@ body {
     font-size: 1.75rem;
     line-height: 1.9rem;
     font-weight: 600;
-    color: #FFFFFF;
+    color: #64510D;
   }
   .container1 {
     width: 8vw;
@@ -118,13 +113,13 @@ body {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #64510D;
 }
 .initial_sect .initial_sect--img {
   border-radius: 100%;
   width: 35%;
   max-width: 800px;
-  background: radial-gradient(rgba(132, 90, 231, 0.8784313725) 25%, rgba(132, 90, 231, 0.6196078431) 40%, #1C1C1C 71%);
+  background: radial-gradient(rgba(132, 90, 231, 0.8784313725) 25%, rgba(132, 90, 231, 0.6196078431) 40%, #FEF8E6 71%);
   margin-left: 50%;
   margin-top: 5%;
 }
@@ -139,20 +134,20 @@ body {
   display: inline-block;
   width: 50%;
   padding: 5%;
-  background-color: #FFFFFF;
+  background-color: white;
   border-radius: 30px;
 }
 .content_sect .content--title {
   font-size: 2.2rem;
   line-height: 2.5rem;
   font-weight: 600;
-  color: #1E1E1E;
+  color: #222121;
 }
 .content_sect .content--text {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
-  color: #1E1E1E;
+  color: #222121;
 }
 .content_sect .side_bar {
   display: inline-block;
@@ -165,13 +160,13 @@ body {
   font-size: 2.2rem;
   line-height: 2.5rem;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #64510D;
 }
 .content_sect .side_bar .lista {
   list-style-type: disc;
   margin-top: 30px;
   padding-left: 10%;
-  color: rgba(132, 90, 231, 0.5490196078);
+  color: #DCA2AD;
   font-size: 1.5rem;
 }
 .content_sect .side_bar .lista .lista--item {
@@ -181,35 +176,19 @@ body {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #64510D;
   text-decoration: none;
 }
 .content_sect .side_bar .lista .lista--item a:hover {
   text-decoration: underline;
-  color: rgba(132, 90, 231, 0.5490196078);
+  color: #DCA2AD;
 }
 
-/*
-// --- Segunda seção de conteudo --- 
-.content_sect {
-    .content2 {
-        &--title {
-            @include mix.estilizaTitulo(var.$cor-fonte-primaria);
-        }
-
-        div {
-            .content2--text {
-                @include mix.estilizaTexto(var.$cor-fonte-primaria);
-            }
-        }
-    }
-}
-*/
 .content_sect .neofascismo--title {
   font-size: 3.5rem;
   line-height: 3.8rem;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #64510D;
   margin-bottom: 4%;
 }
 .content_sect .neofascismo .content_neofascismo {
@@ -224,7 +203,7 @@ body {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #64510D;
   width: 80%;
 }
 
@@ -233,7 +212,7 @@ body {
   font-size: 3.5rem;
   line-height: 3.8rem;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #DCA2AD;
   margin-bottom: 1em;
 }
 .caracteristicas .cards {
@@ -254,7 +233,7 @@ body {
 .caracteristicas .cards .container-caracteristica .container-caracteristica--titulo {
   position: absolute;
   bottom: 0;
-  background-color: #845ae7;
+  background-color: white;
   width: 100%;
   height: 30%;
   display: flex;
@@ -267,40 +246,16 @@ body {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #64510D;
 }
 
 /* --- Seção final --- */
-.content_sect .content_container {
-  border-radius: 30px;
-  background-color: #FFFFFF;
-}
-.content_sect .content_container .content_container--title h2 {
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  background-color: rgba(132, 90, 231, 0.5490196078);
-  padding: 2%;
-  font-size: 3.5rem;
-  line-height: 3.8rem;
-  font-weight: 600;
-  color: #FFFFFF;
-}
-.content_sect .content_container .content_container--text {
-  padding: 5%;
-}
-.content_sect .content_container .content_container--text p {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 600;
-  color: #1E1E1E;
-}
-
 @media screen and (max-width: 1200px) {
   .initial_sect .initial_sect--text p {
     font-size: 1rem;
     line-height: 1.3333333333rem;
     font-weight: 600;
-    color: #FFFFFF;
+    color: #64510D;
   }
   .initial_sect .initial_sect--img {
     width: 60%;
@@ -314,25 +269,25 @@ body {
     font-size: 1.4666666667rem;
     line-height: 1.6666666667rem;
     font-weight: 600;
-    color: #1E1E1E;
+    color: #222121;
   }
   .content_sect .content--text {
     font-size: 1rem;
     line-height: 1.3333333333rem;
     font-weight: 600;
-    color: #1E1E1E;
+    color: #222121;
   }
   .content_sect .side_bar .side_bar--title {
     font-size: 1.4666666667rem;
     line-height: 1.6666666667rem;
     font-weight: 600;
-    color: #FFFFFF;
+    color: #64510D;
   }
   .content_sect .side_bar .lista .lista--item a {
     font-size: 1rem;
     line-height: 1.3333333333rem;
     font-weight: 600;
-    color: #FFFFFF;
+    color: #64510D;
   }
   .caracteristicas {
     width: 86vw;
@@ -341,7 +296,7 @@ body {
     font-size: 2.3333333333rem;
     line-height: 2.5333333333rem;
     font-weight: 600;
-    color: #FFFFFF;
+    color: #DCA2AD;
   }
   .caracteristicas .cards .container-caracteristica {
     width: 45%;
@@ -353,32 +308,19 @@ body {
     font-size: 1rem;
     line-height: 1.3333333333rem;
     font-weight: 600;
-    color: #FFFFFF;
+    color: black;
   }
   .content_sect .neofascismo--title {
     font-size: 2.3333333333rem;
     line-height: 2.5333333333rem;
     font-weight: 600;
-    color: #FFFFFF;
+    color: #64510D;
   }
   .content_sect .neofascismo .content_neofascismo--text {
     font-size: 1rem;
     line-height: 1.3333333333rem;
     font-weight: 600;
-    color: #FFFFFF;
-  }
-  .content_sect .content_container .content_container--title h2 {
-    font-size: 2.3333333333rem;
-    line-height: 2.5333333333rem;
-    font-weight: 600;
-    color: #FFFFFF;
-  }
-  .content_sect .content_container .content_container--text p {
-    font-size: 1rem;
-    line-height: 1.3333333333rem;
-    font-weight: 600;
-    color: #1E1E1E;
-    margin-bottom: 1em;
+    color: #64510D;
   }
 }
 @media screen and (max-width: 900px) {
@@ -406,7 +348,7 @@ body {
     font-size: 0.75rem;
     line-height: 1rem;
     font-weight: 600;
-    color: #FFFFFF;
+    color: #64510D;
   }
   .initial_sect .initial_sect--img {
     width: 45%;
@@ -421,7 +363,7 @@ body {
     font-size: 0.6666666667rem;
     line-height: 0.8888888889rem;
     font-weight: 600;
-    color: #1E1E1E;
+    color: #222121;
   }
   .content_sect .side_bar {
     width: 90%;
@@ -430,25 +372,25 @@ body {
     font-size: 1.4666666667rem;
     line-height: 1.6666666667rem;
     font-weight: 600;
-    color: #FFFFFF;
+    color: #64510D;
   }
   .content_sect .side_bar .lista {
     list-style-type: disc;
     margin-top: 5px;
     padding-left: 7%;
-    color: rgba(132, 90, 231, 0.5490196078);
+    color: #DCA2AD;
     font-size: 1.5rem;
   }
   .content_sect .side_bar .lista .lista--item a {
     font-size: 1rem;
     line-height: 1.3333333333rem;
     font-weight: 600;
-    color: #FFFFFF;
+    color: #64510D;
     text-decoration: none;
   }
   .content_sect .side_bar .lista .lista--item a:hover {
     text-decoration: underline;
-    color: rgba(132, 90, 231, 0.5490196078);
+    color: #DCA2AD;
   }
   .caracteristicas .cards {
     display: flex;
@@ -460,19 +402,6 @@ body {
   }
   .caracteristicas .cards .container-caracteristica .container-caracteristica--imagem {
     width: 100%;
-  }
-  .content_sect .content_container .content_container--title h2 {
-    padding: 10%;
-    font-size: 1.4rem;
-    line-height: 1.52rem;
-    font-weight: 600;
-    color: #FFFFFF;
-  }
-  .content_sect .content_container .content_container--text p {
-    font-size: 1rem;
-    line-height: 1.3333333333rem;
-    font-weight: 600;
-    color: #1E1E1E;
   }
 }
 .rodape {
@@ -488,12 +417,12 @@ body {
   font-weight: 700;
   font-size: 40px;
   margin-bottom: 1em;
-  color: #FFFFFF;
+  color: #64510D;
 }
 .rodape .card-sobre-nos .paragrafo--sobre-nos {
   font-weight: 700;
   font-size: 20px;
-  color: #FFFFFF;
+  color: #64510D;
 }
 .rodape .card-sobre-nos #copyRight {
   margin: 2em 0;
@@ -505,14 +434,14 @@ body {
   font-weight: 700;
   font-size: 40px;
   margin-bottom: 1em;
-  color: #FFFFFF;
+  color: #64510D;
 }
 .rodape .card-liks-referencia .lista--links-referencia .lista--item {
   margin: 0.2em;
 }
 .rodape .card-liks-referencia .lista--links-referencia .lista--item .lista--link {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #64510D;
   font-size: 20px;
 }
 .rodape .card-contato {
@@ -523,10 +452,10 @@ body {
   font-weight: 700;
   font-size: 40px;
   margin-bottom: 1em;
-  color: #FFFFFF;
+  color: #64510D;
 }
 .rodape .card-contato .input {
-  background-color: rgba(217, 199, 199, 0.1490196078);
+  background-color: #FEF8E6;
   border: 0;
   width: 72%;
   border-radius: 10px;
@@ -534,12 +463,12 @@ body {
   padding: 0.75em;
 }
 .rodape .card-contato .input::-moz-placeholder {
-  color: #FFFFFF;
+  color: #64510D;
   font-weight: 500;
   font-size: 20px;
 }
 .rodape .card-contato .input::placeholder {
-  color: #FFFFFF;
+  color: #64510D;
   font-weight: 500;
   font-size: 20px;
 }
@@ -551,12 +480,12 @@ body {
 }
 .rodape .card-contato .botao-envia {
   display: block;
-  background-color: rgba(132, 90, 231, 0.5490196078);
+  background-color: #DCA2AD;
   position: absolute;
   left: 50%;
   padding: 0.5em 1.5em;
   border-radius: 10px;
-  color: #FFFFFF;
+  color: #64510D;
   font-weight: 600;
   border: 0;
 }
@@ -660,7 +589,7 @@ body {
   position: absolute;
   border-radius: 10px;
   bottom: 0;
-  background-color: rgba(132, 90, 231, 0.5607843137);
+  background-color: #DCA2AD;
   height: 40%;
   display: flex;
   flex-direction: column;
@@ -671,7 +600,7 @@ body {
 .container .container2 main .container-imagem .container-imagem--descricao .descricao--texto {
   font-weight: 400;
   font-size: 24px;
-  color: #FFFFFF;
+  color: #64510D;
   width: 60%;
   margin: 0 auto;
 }
@@ -679,7 +608,7 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 36px;
-  color: #FFFFFF;
+  color: #64510D;
 }
 @keyframes fadein {
   from {
@@ -732,25 +661,6 @@ body {
   flex-wrap: wrap;
 }
 
-/*@media screen and (max-width: 900px){
-    .container{
-        .container2{
-            main{
-                .container-imagem{
-                    .container-imagem--descricao{
-                        .descricao--texto{
-                            font-size: 12px;
-                        }
-                        .descricao--titulo{
-                            font-size: 20px;
-                        }
-                    }
-                }
-            }
-
-        }
-    }
-}*/
 @media screen and (max-width: 480px) {
   .container .container2 {
     margin: auto;
@@ -774,7 +684,7 @@ body {
   border-radius: 100%;
 }
 .container .container2 main .card-informacoes .card-informacoes--lista .lista--item {
-  color: #FFFFFF;
+  color: #64510D;
   margin: 0.5em 0;
   display: flex;
   align-items: center;
@@ -811,7 +721,7 @@ body {
 }
 .contato .titulo {
   font-size: 30px;
-  color: #FFFFFF;
+  color: #64510D;
   font-weight: 600;
   margin-bottom: 0.5em;
 }
@@ -823,20 +733,20 @@ body {
 .contato .formulario .input {
   width: 28%;
   height: 3em;
-  background-color: rgba(217, 199, 199, 0.1490196078);
+  background-color: #FEF8E6;
   border-radius: 10px;
   border-width: 0;
   padding-left: 1em;
   padding-right: 1em;
 }
 .contato .formulario .input::-moz-placeholder {
-  color: #FFFFFF;
+  color: #64510D;
   font-weight: 500;
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
 }
 .contato .formulario .input::placeholder {
-  color: #FFFFFF;
+  color: #64510D;
   font-weight: 500;
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
@@ -845,13 +755,13 @@ body {
   width: 31%;
 }
 .contato .formulario .gostou .label-gostou {
-  color: #FFFFFF;
+  color: #64510D;
 }
 .contato .formulario .gostou .input-gostou {
-  color: #FFFFFF;
+  color: #64510D;
 }
 .contato .formulario .input-email {
-  background-color: rgba(217, 199, 199, 0.1490196078);
+  background-color: #FEF8E6;
   border-radius: 10px;
   border-width: 0;
   padding-left: 1em;
@@ -860,19 +770,19 @@ body {
   width: 62%;
 }
 .contato .formulario .input-email::-moz-placeholder {
-  color: #FFFFFF;
+  color: #64510D;
   font-weight: 500;
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
 }
 .contato .formulario .input-email::placeholder {
-  color: #FFFFFF;
+  color: #64510D;
   font-weight: 500;
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
 }
 .contato .formulario #mensagem {
-  background-color: rgba(217, 199, 199, 0.1490196078);
+  background-color: #FEF8E6;
   border-radius: 10px;
   border-width: 0;
   padding-left: 1em;
@@ -880,13 +790,13 @@ body {
   width: 95%;
 }
 .contato .formulario #mensagem::-moz-placeholder {
-  color: #FFFFFF;
+  color: #64510D;
   font-weight: 500;
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
 }
 .contato .formulario #mensagem::placeholder {
-  color: #FFFFFF;
+  color: #64510D;
   font-weight: 500;
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
@@ -894,11 +804,11 @@ body {
 .contato .formulario .botao-submit {
   width: 30%;
   margin-left: 68%;
-  background-color: rgba(132, 90, 231, 0.5490196078);
+  background-color: #DCA2AD;
   height: 2.5em;
   border-radius: 10px;
   border-width: 0;
-  color: #FFFFFF;
+  color: #64510D;
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
 }
