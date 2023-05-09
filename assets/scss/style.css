@@ -12,7 +12,7 @@ body {
 
 .cabecalho {
   height: 55px;
-  background-color: rgba(217, 199, 199, 0.1490196078);
+  background-color: #FEF8E6;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -32,7 +32,7 @@ body {
   text-transform: uppercase;
 }
 .cabecalho .navegacao .navegacao--lista .lista--item .item--link:hover {
-  color: rgba(132, 90, 231, 0.5490196078);
+  color: #DCA2AD;
 }
 .cabecalho .cabecalho__botao {
   display: none;
@@ -56,12 +56,12 @@ body {
   }
   .cabecalho .cabecalho__botao {
     display: initial;
-    background-color: #1C1C1C;
+    background-color: #FEF8E6;
     border: 0;
   }
   .cabecalho .cabecalho__botao::after {
     content: "☰";
-    color: #FFFFFF;
+    color: #64510D;
     font-size: 40px;
   }
   .cabecalho .navegacao {
