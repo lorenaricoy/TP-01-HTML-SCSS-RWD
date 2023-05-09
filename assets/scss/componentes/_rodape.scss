@@ -3,12 +3,12 @@
     font-weight: 700;
     font-size: var.$tamanho-titulo-rodape;
     margin-bottom: 1em;
-    color: var.$cor-fonte-primaria;
+    color: white;
 }
 
 .rodape{
     background-color: 
-    #363636;
+    #E8B92D;
     display: flex;
     justify-content: space-around;
     padding: 2em 1em;
@@ -20,7 +20,7 @@
         .paragrafo--sobre-nos{
             font-weight: 700;
             font-size: var.$tamanho-texto-rodape;
-            color: var.$cor-fonte-primaria;
+            color: white;
         }
         #copyRight{
             margin: 2em 0;
@@ -36,7 +36,7 @@
                 margin: 0.2em;
                 .lista--link{
                     text-decoration: none;
-                    color: var.$cor-fonte-primaria;
+                    color: white;
                     font-size: var.$tamanho-texto-rodape;
                 }
             }
