@@ -28,7 +28,7 @@
         border-radius: 100%;
         width: 35%;
         max-width: 800px;
-        background: radial-gradient(#845AE7E0 25%, #845AE79E 40%, var.$cor-de-fundo 71%);
+        background: #FFF0F0;
         margin-left: 50%;
         margin-top: 5%;
     }
@@ -95,7 +95,7 @@
 .content_sect {
     .neofascismo {
         &--title {
-            @include mix.estilizaTitulo(var.$cor-fonte-primaria, 1);
+            @include mix.estilizaTitulo(var.$cor-destaque, 1);
             margin-bottom: 4%;
         }
 
@@ -253,7 +253,7 @@
     .content_sect {
         .neofascismo {
             &--title {
-                @include mix.estilizaTitulo(var.$cor-fonte-primaria, 1.5);
+                @include mix.estilizaTitulo(var.$cor-destaque, 1.5);
             }
 
             .content_neofascismo {
