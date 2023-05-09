@@ -10,84 +10,88 @@ body {
   overflow-x: hidden;
 }
 
-.init {
-  display: flex;
+.cabecalho {
   height: 55px;
-}
-
-.container1 {
-  display: flex;
-  gap: 1em;
-  flex-direction: column;
-  width: 5vw;
-}
-.container1 .navegacao {
-  transform: rotate(90deg);
-}
-.container1 .navegacao .navegacao--lista {
+  background-color: rgba(217, 199, 199, 0.1490196078);
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
-.container1 .navegacao .navegacao--lista .lista--item {
-  width: 222vw;
-  margin: 12px;
+.cabecalho .navegacao {
+  margin: auto;
 }
-.container1 .navegacao .navegacao--lista .lista--item .item--link {
+.cabecalho .navegacao .navegacao--lista {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+.cabecalho .navegacao .navegacao--lista .lista--item .item--link {
   text-decoration: none;
   color: #FFFFFF;
   font-size: 1.5rem;
   text-transform: uppercase;
 }
-.container1 .navegacao .navegacao--lista .lista--item .item--link:hover {
+.cabecalho .navegacao .navegacao--lista .lista--item .item--link:hover {
   color: rgba(132, 90, 231, 0.5490196078);
 }
-
-.cabecalho {
-  padding-left: 38%;
-}
-.cabecalho--title {
-  font-family: "Radley", serif;
-  font-size: 3.5rem;
-  line-height: 3.8rem;
-  font-weight: 600;
-  color: #FFFFFF;
+.cabecalho .cabecalho__botao {
+  display: none;
 }
 
-/*@media screen and (max-width: 880px){
-    .container1{
-        max-width: 8vw;
-    }
-}*/
 @media screen and (max-width: 900px) {
+  /*.cabecalho{
+      overflow: hidden;
+      .navegacao{
+          .navegacao--lista{
+              .lista--item{
+                  .item--link{
+                  font-size: var.$tamanho-item-tablet;
+                  }
+              }
+          }
+      }
+  }*/
   .cabecalho {
-    padding-left: 32%;
+    display: initial;
   }
-  .cabecalho--title {
-    font-size: 2.3333333333rem;
-    line-height: 2.5333333333rem;
-    font-weight: 600;
+  .cabecalho .cabecalho__botao {
+    display: initial;
+    background-color: #1C1C1C;
+    border: 0;
+  }
+  .cabecalho .cabecalho__botao::after {
+    content: "☰";
     color: #FFFFFF;
+    font-size: 40px;
   }
-  .container1 {
-    width: 10vw;
+  .cabecalho .navegacao {
+    display: none;
   }
-  .container1 .navegacao .navegacao--lista .lista--item .item--link {
-    font-size: 26px;
+  .cabecalho--ativo {
+    transition: all 1000ms ease;
+    width: 50%;
+  }
+  .cabecalho--ativo .navegacao {
+    display: initial;
+    height: 0;
+  }
+  .cabecalho--ativo .navegacao .navegacao--lista {
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
+    margin-left: 10px;
   }
 }
 @media screen and (max-width: 480px) {
-  .cabecalho {
-    padding-left: 28%;
-  }
-  .cabecalho--title {
-    font-size: 1.75rem;
-    line-height: 1.9rem;
-    font-weight: 600;
-    color: #FFFFFF;
-  }
-  .container1 {
-    width: 8vw;
-  }
+  /*.header {
+      display: none;
+      background-color: black;
+      padding-left: 28%;
+      top: -50px;
+      &--title {
+          @include mix.estilizaTitulo(var.$cor-fonte-primaria, 2);
+      }
+  }*/
   .container1 .navegacao .navegacao--lista .lista--item {
     margin: 5px;
   }
@@ -97,7 +101,6 @@ body {
 }
 #Home {
   display: flex;
-  margin-left: 5vw;
 }
 
 /* --- Seção do inicio da pagina --- */
@@ -189,22 +192,6 @@ body {
   color: rgba(132, 90, 231, 0.5490196078);
 }
 
-/*
-// --- Segunda seção de conteudo --- 
-.content_sect {
-    .content2 {
-        &--title {
-            @include mix.estilizaTitulo(var.$cor-fonte-primaria);
-        }
-
-        div {
-            .content2--text {
-                @include mix.estilizaTexto(var.$cor-fonte-primaria);
-            }
-        }
-    }
-}
-*/
 .content_sect .neofascismo--title {
   font-size: 3.5rem;
   line-height: 3.8rem;
@@ -732,25 +719,6 @@ body {
   flex-wrap: wrap;
 }
 
-/*@media screen and (max-width: 900px){
-    .container{
-        .container2{
-            main{
-                .container-imagem{
-                    .container-imagem--descricao{
-                        .descricao--texto{
-                            font-size: 12px;
-                        }
-                        .descricao--titulo{
-                            font-size: 20px;
-                        }
-                    }
-                }
-            }
-
-        }
-    }
-}*/
 @media screen and (max-width: 480px) {
   .container .container2 {
     margin: auto;

@@ -2,24 +2,19 @@
 @use '../abstract/mixins' as mix;
 @import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
 
-.init {
-    display: flex;
+.cabecalho{
     height: 55px;
-}
-
-.container1{
+    background-color: var.$cor-input;
     display: flex;
-    gap: 1em;
-    flex-direction: column;
-    width: 5vw;
+    align-items: center;
+    justify-content: space-around;
     .navegacao{
-        transform: rotate(90deg);
+        margin: auto;
         .navegacao--lista{
             display: flex;
             align-items: center;
+            gap: 10%;
             .lista--item{
-                width: 222vw;
-                margin: 12px;
                 .item--link{
                 text-decoration: none;
                 color: var.$cor-fonte-primaria;
@@ -32,26 +27,15 @@
             }
         }
     }
-}
-
-.cabecalho {
-    padding-left: 38%;
-    &--title {
-        font-family: 'Radley', serif;
-        @include mix.estilizaTitulo(var.$cor-fonte-primaria, 1);
+    .cabecalho__botao{
+        display: none;
     }
 }
 
 @media screen and (max-width: 900px){
-    .cabecalho {
-        padding-left: 32%;
-        &--title {
-            @include mix.estilizaTitulo(var.$cor-fonte-primaria, 1.5);
-        }
-    }
-
-    .container1{
-        width: 10vw;
+    
+    /*.cabecalho{
+        overflow: hidden;
         .navegacao{
             .navegacao--lista{
                 .lista--item{
@@ -61,18 +45,51 @@
                 }
             }
         }
+    }*/
+    .cabecalho{
+        display: initial;
+        .cabecalho__botao{
+            display: initial;
+            background-color: var.$cor-de-fundo;
+            border: 0;
+            &::after{
+                content: "\2630";
+                color: var.$cor-fonte-primaria;
+                font-size: 40px;
+            }
+        }
+        .navegacao{
+            display: none;
+        }
+    }
+    .cabecalho--ativo{  
+        transition: all 1000ms ease;
+        width: 50%;
+        .navegacao{
+            display: initial;
+            height: 0;
+            .navegacao--lista{
+             flex-direction: column;
+             align-items: start;
+             gap: 1em;
+             margin-left: 10px;
+            }
+        }     
     }
 }
 
 @media screen and (max-width: 480px){
-    .cabecalho {
+    /*.header {
+        display: none;
+        background-color: black;
         padding-left: 28%;
+        top: -50px;
         &--title {
             @include mix.estilizaTitulo(var.$cor-fonte-primaria, 2);
         }
-    }
+    }*/
+
     .container1{
-        width: 8vw;
         .navegacao{
             .navegacao--lista{
                 .lista--item{
