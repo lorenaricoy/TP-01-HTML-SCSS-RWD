@@ -93,13 +93,13 @@
 }
 
 .content_sect {
-    .neofascismo {
+    .tema {
         &--title {
             @include mix.estilizaTitulo(var.$cor-destaque, 1);
             margin-bottom: 4%;
         }
 
-        .content_neofascismo {
+        .content_tema {
             display: flex;
             align-items: flex-start;
             gap: 3%;
@@ -117,9 +117,9 @@
     }
 }
 
-/* --- Seção de caracteristicas --- */
-.caracteristicas{
-    .caracteristicas--titulo{
+/* --- Seção de protagonistas --- */
+.protagonistas{
+    .protagonistas--titulo{
         @include mix.estilizaTitulo(var.$cor-destaque, 1);
         margin-bottom: 1em;
     }
@@ -128,15 +128,15 @@
         flex-wrap: wrap;
         gap: 2%;
         justify-content: space-around;
-        .container-caracteristica{
+        .container-protagonistas{
             width: 23%;
             margin-bottom: 2em;
             position: relative;
-            .container-caracteristica--imagem{
+            .container-protagonistas--imagem{
                 border-radius: 10px;
                 width: 100%;
             }
-            .container-caracteristica--titulo{
+            .container-protagonistas--titulo{
                 position: absolute;
                 bottom: 0;
                 background-color: white;
@@ -226,21 +226,21 @@
         }
     }
 
-    // Seção de caracteristicas
-    .caracteristicas{
+    // Seção de protagonistas
+    .protagonistas{
         width: 86vw;
-        .caracteristicas--titulo{
+        .protagonistas--titulo{
             @include mix.estilizaTitulo(var.$cor-destaque, 1.5);
         }
 
         .cards{
-            .container-caracteristica{
+            .container-protagonistas{
                 width: 45%;
 
-                .container-caracteristica--imagem{
+                .container-protagonistas--imagem{
                     width: 100%;
                 }
-                .container-caracteristica--titulo{
+                .container-protagonistas--titulo{
                     .titulo{
                         @include mix.estilizaTexto(black, 1.5);
                     }
@@ -251,12 +251,12 @@
 
     // Seção neofascismo
     .content_sect {
-        .neofascismo {
+        .tema {
             &--title {
                 @include mix.estilizaTitulo(var.$cor-destaque, 1.5);
             }
 
-            .content_neofascismo {
+            .content_tema {
                 &--text {
                     @include mix.estilizaTexto(var.$cor-fonte-primaria, 1.5);
                 }
@@ -368,15 +368,15 @@
 
 
 
-    // Caracteristicas
-    .caracteristicas{
+    // protagonistas
+    .protagonistas{
         .cards{
             display: flex;
             flex-direction: column;
             padding-left:3%;
-            .container-caracteristica{
+            .container-protagonistas{
                 width: 90%;
-                .container-caracteristica--imagem{
+                .container-protagonistas--imagem{
                     width: 100%;
                 }
             }

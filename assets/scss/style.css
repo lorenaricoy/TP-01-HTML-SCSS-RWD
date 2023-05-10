@@ -192,22 +192,22 @@ body {
   color: #DCA2AD;
 }
 
-.content_sect .neofascismo--title {
+.content_sect .tema--title {
   font-size: 3.5rem;
   line-height: 3.8rem;
   font-weight: 600;
   color: #DCA2AD;
   margin-bottom: 4%;
 }
-.content_sect .neofascismo .content_neofascismo {
+.content_sect .tema .content_tema {
   display: flex;
   align-items: flex-start;
   gap: 3%;
 }
-.content_sect .neofascismo .content_neofascismo--img {
+.content_sect .tema .content_tema--img {
   margin-top: 20px;
 }
-.content_sect .neofascismo .content_neofascismo--text {
+.content_sect .tema .content_tema--text {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
@@ -215,30 +215,30 @@ body {
   width: 80%;
 }
 
-/* --- Seção de caracteristicas --- */
-.caracteristicas .caracteristicas--titulo {
+/* --- Seção de protagonistas --- */
+.protagonistas .protagonistas--titulo {
   font-size: 3.5rem;
   line-height: 3.8rem;
   font-weight: 600;
   color: #DCA2AD;
   margin-bottom: 1em;
 }
-.caracteristicas .cards {
+.protagonistas .cards {
   display: flex;
   flex-wrap: wrap;
   gap: 2%;
   justify-content: space-around;
 }
-.caracteristicas .cards .container-caracteristica {
+.protagonistas .cards .container-protagonistas {
   width: 23%;
   margin-bottom: 2em;
   position: relative;
 }
-.caracteristicas .cards .container-caracteristica .container-caracteristica--imagem {
+.protagonistas .cards .container-protagonistas .container-protagonistas--imagem {
   border-radius: 10px;
   width: 100%;
 }
-.caracteristicas .cards .container-caracteristica .container-caracteristica--titulo {
+.protagonistas .cards .container-protagonistas .container-protagonistas--titulo {
   position: absolute;
   bottom: 0;
   background-color: white;
@@ -250,7 +250,7 @@ body {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.caracteristicas .cards .container-caracteristica .container-caracteristica--titulo .titulo {
+.protagonistas .cards .container-protagonistas .container-protagonistas--titulo .titulo {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
@@ -297,34 +297,34 @@ body {
     font-weight: 600;
     color: #64510D;
   }
-  .caracteristicas {
+  .protagonistas {
     width: 86vw;
   }
-  .caracteristicas .caracteristicas--titulo {
+  .protagonistas .protagonistas--titulo {
     font-size: 2.3333333333rem;
     line-height: 2.5333333333rem;
     font-weight: 600;
     color: #DCA2AD;
   }
-  .caracteristicas .cards .container-caracteristica {
+  .protagonistas .cards .container-protagonistas {
     width: 45%;
   }
-  .caracteristicas .cards .container-caracteristica .container-caracteristica--imagem {
+  .protagonistas .cards .container-protagonistas .container-protagonistas--imagem {
     width: 100%;
   }
-  .caracteristicas .cards .container-caracteristica .container-caracteristica--titulo .titulo {
+  .protagonistas .cards .container-protagonistas .container-protagonistas--titulo .titulo {
     font-size: 1rem;
     line-height: 1.3333333333rem;
     font-weight: 600;
     color: black;
   }
-  .content_sect .neofascismo--title {
+  .content_sect .tema--title {
     font-size: 2.3333333333rem;
     line-height: 2.5333333333rem;
     font-weight: 600;
     color: #DCA2AD;
   }
-  .content_sect .neofascismo .content_neofascismo--text {
+  .content_sect .tema .content_tema--text {
     font-size: 1rem;
     line-height: 1.3333333333rem;
     font-weight: 600;
@@ -400,15 +400,15 @@ body {
     text-decoration: underline;
     color: #DCA2AD;
   }
-  .caracteristicas .cards {
+  .protagonistas .cards {
     display: flex;
     flex-direction: column;
     padding-left: 3%;
   }
-  .caracteristicas .cards .container-caracteristica {
+  .protagonistas .cards .container-protagonistas {
     width: 90%;
   }
-  .caracteristicas .cards .container-caracteristica .container-caracteristica--imagem {
+  .protagonistas .cards .container-protagonistas .container-protagonistas--imagem {
     width: 100%;
   }
 }
