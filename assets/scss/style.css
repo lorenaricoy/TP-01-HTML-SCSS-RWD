@@ -12,7 +12,7 @@ body {
 
 .cabecalho {
   height: 55px;
-  background-color: #FEF8E6;
+  background-color: #FEEBB2;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -463,7 +463,7 @@ body {
   color: white;
 }
 .rodape .card-contato .input {
-  background-color: #FEF8E6;
+  background-color: #FEEBB2;
   border: 0;
   width: 72%;
   border-radius: 10px;
@@ -741,7 +741,7 @@ body {
 .contato .formulario .input {
   width: 28%;
   height: 3em;
-  background-color: #FEF8E6;
+  background-color: #FEEBB2;
   border-radius: 10px;
   border-width: 0;
   padding-left: 1em;
@@ -769,7 +769,7 @@ body {
   color: #64510D;
 }
 .contato .formulario .input-email {
-  background-color: #FEF8E6;
+  background-color: #FEEBB2;
   border-radius: 10px;
   border-width: 0;
   padding-left: 1em;
@@ -790,7 +790,7 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 .contato .formulario #mensagem {
-  background-color: #FEF8E6;
+  background-color: #FEEBB2;
   border-radius: 10px;
   border-width: 0;
   padding-left: 1em;
