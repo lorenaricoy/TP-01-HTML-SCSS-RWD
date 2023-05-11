@@ -1,8 +1,8 @@
 # TP-01-HTML-SCSS-RWD
 
-O projeto TP-01-HTML-SCSS-RWD é um trabalho em conjunto entre as disciplinas DAW (Desenvolvimento de Aplicativos Web) e geopolítica. O conteúdo tratado no site é sobre o Fascismo no contexto dos dias atuais, ou seja, o Neofascismo. O site conta com uma home que contem todo o conteúdo principal, uma galeria de fotos sobre acontecimentos envolvidos com o tema, e uma página de contato (Não implementada de fato, apenas um formulário). 
+Projeto de JavaScript para implementar um menu, um componente que ficará no topo da página. Deverá exibir todas as opções no modo desktop, mas deverá ser expansível no modo mobile. 
 
-<a href="https://igorbarrosoalmeida.github.io/TP-01-HTML-SCSS-RWD/"><button>Clique aqui para conferir o site</button></a>
+<a href="https://lorenaricoy.github.io/TP-01-HTML-SCSS-RWD/"><button>Clique aqui para conferir o site</button></a>
 
 ## 🛠️ Ferramentas
 
@@ -10,6 +10,7 @@ Lista de ferramentas usadas no desenvolvimento do projeto:
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Estrutura das páginas;
 * [SCSS](https://sass-lang.com/documentation/) - Estilização;
+* [JAVASCRIPT];
 * [Visual Studio code](https://code.visualstudio.com/docs) - IDE utilizada;
 
 ## ✒️ Autores
