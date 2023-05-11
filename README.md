@@ -2,8 +2,6 @@
 
 Projeto de JavaScript para implementar um menu, um componente que ficará no topo da página. Deverá exibir todas as opções no modo desktop, mas deverá ser expansível no modo mobile. 
 
-<a href="https://lorenaricoy.github.io/TP-01-HTML-SCSS-RWD/"><button>Clique aqui para conferir o site</button></a>
-
 ## 🛠️ Ferramentas
 
 Lista de ferramentas usadas no desenvolvimento do projeto:
